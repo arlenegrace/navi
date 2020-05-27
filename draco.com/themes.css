@@ -1,0 +1,32 @@
+/* THEME INDEPENDENT */
+.landing .landing_title h1 {
+    color: rgb(184, 184, 184);
+}
+.landing .landing_title  h1 {
+    color: rgb(179, 179, 179);
+}
+.landing .landing_title p {
+    color: rgb(179, 179, 179);
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(37, 37, 37);
+    }
+
+    .right_header a {
+        color: rgb(179, 179, 179);
+    }
+    .right_header a:hover {
+        color: #ffeccf;
+    }
+    .nav_bar .current {
+        color: #f0d5b6;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(25, 25, 25);
+    }
+}

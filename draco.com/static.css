@@ -1,0 +1,304 @@
+.nav_bar {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: auto;
+    max-width: 1260px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.nav_bar img {
+    height: 25px;
+}
+.nav_bar nav {
+    display: flex;
+}
+.right_header {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-left: auto;
+    margin-right: 0;
+}
+.right_header div {
+    margin-left: 50px;
+}
+.right_header a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+
+.footer {
+    padding: 30px 30px;
+}
+.footer .footer_container {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0px;
+}
+.footer .logo_wrapper {
+    width: 33%;
+    margin-right: auto;
+    display: flex;
+}
+.footer .logo_wrapper figure {
+    background-image: url("images/logo_light.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer .logo_wrapper h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    margin: auto 0;
+}
+.social {
+    width: 33%;
+    margin: 0 auto;
+}
+.social .social_container {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    width: 33%;
+    height: 30px;
+    margin-left: auto;
+    display: flex;
+}
+.copyright h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.youtube,
+.instagram,
+.twitter,
+.discord,
+.github {
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: all 0.2s;
+}
+.youtube:hover,
+.instagram:hover,
+.twitter:hover,
+.discord:hover,
+.github:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1300px) {
+    .footer {
+        width: auto;
+        padding: 20px 30px;
+    }
+    .copyright {
+        font-size: 14px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .right_header a {
+        font-size: 16px;
+    }
+    
+    .footer {
+        padding: 20px 30px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .dropdown_menu button {
+        font-size: 20px
+    }
+
+    .nav_bar {
+        padding-top: 0px;
+    }
+    .nav_bar .hamburger {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        right: 0;
+    }
+    .left_header {
+        display: none;
+    }
+    .right_header {
+        display: none;
+    }
+    .left_header div {
+        margin-right: 15px;
+    }
+    .right_header div {
+        margin-left: 15px;
+    }
+    .center_header .header_logo figure {
+        width: 125px;
+        height: 87px;
+    }
+    .left_header a,
+    .right_header a {
+        font-size: 14px;
+    }
+    .center_header a {
+        font-size: 12px;
+    }
+
+    .footer {
+        width: auto;
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .social {
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .social_container {
+        width: 250px;
+        margin-right: 0px;
+        margin-left: auto;
+    }
+    .copyright {
+        font-size: 12px;
+        width: auto;
+    }
+}
+
+
+/* 
+ * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
+ * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
+ * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
+ * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
+ * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
+ * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
+ */
+
+.left_header a,
+.right_header a {
+    color: rgb(163, 163, 163);
+}
+.nav_bar .current {
+    color: #f0d5b6;
+}
+.left_header a:hover,
+.right_header a:hover {
+    color: #f34115;
+}
+.center_header {
+    background-color: rgb(37, 37, 37);
+}
+.center_header a {
+    color: #ffffff;
+}
+.center_header .header_logo figure {
+    background-image: url("images/logo_white.png");
+}
+
+.footer {
+    background-color: rgb(34, 34, 34);
+}
+.footer .logo_wrapper h1 {
+    color: rgb(98, 98, 98);
+}
+.footer .logo_wrapper figure {
+    filter: brightness(0.6);
+}
+
+.youtube {
+    background-image: url("images/footer/youtube_dark.png");
+}
+.instagram {
+    background-image: url("images/footer/instagram_dark.png");
+}
+.twitter {
+    background-image: url("images/footer/twitter_dark.png");
+}
+.discord {
+    background-image: url("images/footer/discord_dark.png");
+}
+.github {
+    background-image: url("images/footer/github_dark.png");
+}
+
+.copyright {
+    color: rgb(98, 98, 98);
+}
+
+
+@media screen and (prefers-color-scheme: light) {
+    .left_header a,
+    .right_header a {
+        color: rgb(139, 139, 139);
+    }
+    .nav_bar .current {
+        color: #424242;
+    }
+    .left_header a:hover,
+    .right_header a:hover {
+        color: #2f2f2f;
+    }
+    .center_header {
+        background-color: white;
+    }
+    .center_header a {
+        color: #292929;
+    }
+    .center_header .header_logo figure {
+        background-image: url("images/logo_dark.png");
+    }
+
+    .copyright {
+        color: #d1d1d1;
+    }
+}
