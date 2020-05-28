@@ -48,3 +48,55 @@
     50%  { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+.landing .bg_wrapper img {
+    -webkit-animation: zoom_out 1s;
+    -moz-animation:    zoom_out 1s;
+    -ms-animation:     zoom_out 1s;
+    -o-animation:      zoom_out 1s;
+    animation:         zoom_out 1s;
+}
+.landing .landing_title a {
+    -webkit-animation: fadein_designer 2.7s;
+    -moz-animation:    fadein_designer 2.7s;
+    -ms-animation:     fadein_designer 2.7s;
+    -o-animation:      fadein_designer 2.7s;
+    animation:         fadein_designer 2.7s;
+}
+.landing .landing_title h1 {
+    -webkit-animation: fadein_developer 1.7s;
+    -moz-animation:    fadein_developer 1.7s;
+    -ms-animation:     fadein_developer 1.7s;
+    -o-animation:      fadein_developer 1.7s;
+    animation:         fadein_developer 1.7s;
+}
+.landing .landing_title p {
+    -webkit-animation: fadein_designer 2.3s;
+    -moz-animation:    fadein_designer 2.3s;
+    -ms-animation:     fadein_designer 2.3s;
+    -o-animation:      fadein_designer 2.3s;
+    animation:         fadein_designer 2.3s;
+}
+.landing .blur_region .overview h1 {
+    -webkit-animation: fadein_designer 2.3s;
+    -moz-animation:    fadein_designer 2.3s;
+    -ms-animation:     fadein_designer 2.3s;
+    -o-animation:      fadein_designer 2.3s;
+    animation:         fadein_designer 2.3s;
+}
+.landing .blur_region .overview .highlight_container {
+    -webkit-animation: fadein_designer 2.9s;
+    -moz-animation:    fadein_designer 2.9s;
+    -ms-animation:     fadein_designer 2.9s;
+    -o-animation:      fadein_designer 2.9s;
+    animation:         fadein_designer 2.9s;
+}
+
+.app_preview .app_preview_wrapper img {
+    -webkit-animation: slide_up 0.8s;
+    -moz-animation:    slide_up 0.8s;
+    -ms-animation:     slide_up 0.8s;
+    -o-animation:      slide_up 0.8s;
+    animation:         slide_up 0.8s;
+}

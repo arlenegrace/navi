@@ -16,12 +16,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-
-    -webkit-animation: zoom_out 1s;
-    -moz-animation:    zoom_out 1s;
-    -ms-animation:     zoom_out 1s;
-    -o-animation:      zoom_out 1s;
-    animation:         zoom_out 1s;
 }
 .landing_container {
     width: 1260px;
@@ -54,12 +48,6 @@
     padding: 6px;
     color: rgb(135, 148, 165);
     background-color: rgb(222, 223, 226);
-    
-    -webkit-animation: fadein_developer 1.7s;
-    -moz-animation:    fadein_developer 1.7s;
-    -ms-animation:     fadein_developer 1.7s;
-    -o-animation:      fadein_developer 1.7s;
-    animation:         fadein_developer 1.7s;
 }
 .landing .landing_title h1 {
     font-weight: 700;
@@ -67,12 +55,6 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 30px;
-    
-    -webkit-animation: fadein_developer 1.7s;
-    -moz-animation:    fadein_developer 1.7s;
-    -ms-animation:     fadein_developer 1.7s;
-    -o-animation:      fadein_developer 1.7s;
-    animation:         fadein_developer 1.7s;
 }
 .landing .landing_title p {
     font-weight: 600;
@@ -81,12 +63,6 @@
     letter-spacing: 0.015em;
 
     max-width: 600px;
-
-    -webkit-animation: fadein_designer 2.3s;
-    -moz-animation:    fadein_designer 2.3s;
-    -ms-animation:     fadein_designer 2.3s;
-    -o-animation:      fadein_designer 2.3s;
-    animation:         fadein_designer 2.3s;
 }
 .landing .blur_region {
     position: absolute;
@@ -108,7 +84,7 @@
 .landing .blur_region .overview h1 {
     font-weight: 700;
     font-size: 28px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .landing .blur_region .overview .highlight_flexbox_container {
     display: flex;
@@ -143,12 +119,6 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 30px;
-
-    -webkit-animation: slide_up 0.8s;
-    -moz-animation:    slide_up 0.8s;
-    -ms-animation:     slide_up 0.8s;
-    -o-animation:      slide_up 0.8s;
-    animation:         slide_up 0.8s;
 }
 .app_preview .app_preview_wrapper h1,
 .app_preview .app_preview_wrapper p {
