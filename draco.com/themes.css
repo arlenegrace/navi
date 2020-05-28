@@ -1,32 +1,135 @@
-/* THEME INDEPENDENT */
-.landing .landing_title h1 {
-    color: rgb(184, 184, 184);
+body {
+    background-color: rgb(241, 241, 241);
 }
-.landing .landing_title  h1 {
-    color: rgb(179, 179, 179);
+
+.landing .landing_title h1 {
+    color: rgb(135, 148, 165);
 }
 .landing .landing_title p {
-    color: rgb(179, 179, 179);
+    color: rgb(184, 189, 197);
+}
+.landing .landing_container h2 {
+    color: rgb(192, 198, 207);
+}
+.landing .blur_region {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    /* background-image: linear-gradient(to right, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.9)); */
+}
+.landing .blur_region .overview h1 {
+    color: rgb(135, 148, 165);
+}
+.landing .blur_region .overview .highlight_container h3 {
+    color: rgb(135, 148, 165);
+}
+.landing .blur_region .overview .highlight_container p {
+    color: rgb(192, 198, 207);
 }
 
-@media screen and (prefers-color-scheme: light) {
-    body {
-        background-color: rgb(37, 37, 37);
-    }
 
-    .right_header a {
-        color: rgb(179, 179, 179);
-    }
-    .right_header a:hover {
-        color: #ffeccf;
-    }
-    .nav_bar .current {
-        color: #f0d5b6;
-    }
+.preview_bar .preview_wrapper .preview_feature_container h1 {
+    color: rgb(135, 148, 165);
+}
+.preview_bar .preview_wrapper .preview_feature_container p {
+    color: rgb(192, 198, 207);
 }
 
-@media screen and (prefers-color-scheme: dark) {
-    body {
-        background-color: rgb(25, 25, 25);
-    }
+
+.app_preview {
+    background-image: linear-gradient(to bottom, rgb(209, 216, 226), rgb(241, 241, 241));
+}
+.app_preview .app_preview_wrapper h1 {
+    color: rgb(184, 189, 197);
+}
+.app_preview .app_preview_wrapper p {
+    color: rgb(135, 148, 165);
+}
+
+#lifestyle {
+    background-image: url("images/lifestyle.jpg");
+}
+#lifestyle .lifestyle_gradient_wrapper {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+#lifestyle .text_container h1 {
+    color: rgb(218, 218, 218);
+}
+#lifestyle .text_container p {
+    color: rgb(200, 200, 200);
+}
+
+.four_square {
+    background-color: rgb(25, 25, 25);
+}
+.four_square .four_square_header_container h1 {
+    color: rgb(136, 136, 136);
+}
+.four_square .four_square_header_container h2 {
+    color: rgb(209, 209, 209);
+}
+.four_square .four_square_header_container p {
+    color: rgb(190, 190, 190);
+}
+.four_square .square_info_container .square_border_wrapper {
+    background-color: rgb(37, 37, 37);
+}
+.four_square .square_info_container h1 {
+    color: rgb(190, 190, 190);
+}
+
+
+.themes {
+    background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(37, 37, 37));
+}
+.themes .themes_wrapper {
+    background-color: rgb(37, 37, 37);
+}
+.themes .themes_wrapper .themes_header_container h1 {
+    color: rgb(214, 214, 214);
+}
+.themes .themes_wrapper .themes_header_container p {
+    color: rgb(192, 192, 192);
+}
+.themes .themes_wrapper .theme_group h1 {
+    color: rgb(151, 151, 151);
+}
+
+
+#automate {
+    background-image: url("images/ultraboost.jpg");
+}
+#automate .automate_gradient_wrapper {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+}
+#automate .text_container h1 {
+    color: rgb(218, 218, 218);
+}
+#automate .text_container p {
+    color: rgb(200, 200, 200);
+}
+
+.community {
+    background-color: rgb(250, 250, 250);
+}
+.community .container .discord_wrapper, .community .container .guide_wrapper {
+    background-color: rgb(231, 232, 236);
+}
+.community .container h1 {
+    color: rgb(192, 198, 207);
+}
+.community .container p {
+    color: rgb(135, 148, 165);
+}
+.community .container a {
+    color: rgb(129, 169, 255);
+}
+
+
+.landing .landing_title h1 {
+    color: rgb(135, 148, 165);
+}
+.landing .landing_title p {
+    color: rgb(192, 198, 207);
+}
+.landing .landing_container h2 {
+    color: rgb(192, 198, 207);
 }

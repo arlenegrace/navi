@@ -8,7 +8,7 @@
     margin-right: auto;
 
     width: auto;
-    max-width: 1260px;
+    max-width: 1320px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,7 +53,7 @@
 }
 .footer .footer_container {
     width: auto;
-    max-width: 1200px;
+    max-width: 1260px;
     margin: 0 auto;
     display: flex;
     padding: 30px 0px;
@@ -224,14 +224,15 @@
  * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
  */
 
-.left_header a,
-.right_header a {
-    color: rgb(163, 163, 163);
+ .right_header a {
+    color: rgb(192, 198, 207);
+}
+.right_header #active {
+    color: rgb(135, 148, 165);
 }
 .nav_bar .current {
     color: #f0d5b6;
 }
-.left_header a:hover,
 .right_header a:hover {
     color: #f34115;
 }
@@ -246,33 +247,32 @@
 }
 
 .footer {
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(231, 232, 236);
 }
 .footer .logo_wrapper h1 {
-    color: rgb(98, 98, 98);
+    color: rgb(185, 185, 185);
 }
 .footer .logo_wrapper figure {
-    filter: brightness(0.6);
+    filter: brightness(0.5);
 }
-
 .youtube {
-    background-image: url("images/footer/youtube_dark.png");
+    background-image: url("images/footer/youtube_light.png");
 }
 .instagram {
-    background-image: url("images/footer/instagram_dark.png");
+    background-image: url("images/footer/instagram_light.png");
 }
 .twitter {
-    background-image: url("images/footer/twitter_dark.png");
+    background-image: url("images/footer/twitter_light.png");
 }
 .discord {
-    background-image: url("images/footer/discord_dark.png");
+    background-image: url("images/footer/discord_light.png");
 }
 .github {
-    background-image: url("images/footer/github_dark.png");
+    background-image: url("images/footer/github_light.png");
 }
 
 .copyright {
-    color: rgb(98, 98, 98);
+    color: rgb(185, 185, 185);
 }
 
 
