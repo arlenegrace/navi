@@ -1,8 +1,11 @@
+/* KEYFRAME ANIMATIONS GO HERE */
+
 @keyframes fadein_txt {
     from { opacity: 0; }
     33%  { opacity: 0; }
     to   { opacity: 1; }
 }
+
 @keyframes fadein_img {
     from { opacity: 0; }
     60%  { opacity: 0; }
@@ -13,6 +16,26 @@
     from {
         -webkit-transform: translateY(60px);
         transform: translateY(60px);
+    }
+    to {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes slide_up_80 {
+    from {
+        -webkit-transform: translateY(80px);
+        transform: translateY(80px);
+    }
+    to {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+@keyframes slide_up_100 {
+    from {
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
     }
     to {
         -webkit-transform: translateY(0px);
@@ -30,7 +53,6 @@
         transform: scale(1);
     }
 }
-
 
 @keyframes fadein_creator {
     from { opacity: 0; }
@@ -51,13 +73,6 @@
 
 
 .landing .bg_wrapper figure {
-    -webkit-animation: zoom_out 1s;
-    -moz-animation:    zoom_out 1s;
-    -ms-animation:     zoom_out 1s;
-    -o-animation:      zoom_out 1s;
-    animation:         zoom_out 1s;
-}
-.landing .bg_wrapper img {
     -webkit-animation: zoom_out 1s;
     -moz-animation:    zoom_out 1s;
     -ms-animation:     zoom_out 1s;
@@ -101,9 +116,9 @@
 }
 
 .app_preview .app_preview_wrapper img {
-    -webkit-animation: slide_up 0.8s;
-    -moz-animation:    slide_up 0.8s;
-    -ms-animation:     slide_up 0.8s;
-    -o-animation:      slide_up 0.8s;
-    animation:         slide_up 0.8s;
+    -webkit-animation: slide_up_100 0.8s;
+    -moz-animation:    slide_up_100 0.8s;
+    -ms-animation:     slide_up_100 0.8s;
+    -o-animation:      slide_up_100 0.8s;
+    animation:         slide_up_100 0.8s;
 }

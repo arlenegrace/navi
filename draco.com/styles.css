@@ -10,7 +10,6 @@
     left: 0;
     z-index: -1;
     overflow: hidden;
-    background-image: linear-gradient(to right, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.9));
 }
 .landing .bg_wrapper figure {
     height: 100%;
@@ -48,14 +47,10 @@
 
     border-radius: 5px;
     padding: 6px;
-    color: rgb(135, 148, 165);
-    background-color: rgb(222, 223, 226);
 }
 .landing #download {
     font-size: 20px;
     padding: 0px;
-    background-color: rgba(222, 223, 226, 0);
-
 }
 .landing .landing_title h1 {
     font-weight: 700;
@@ -91,6 +86,8 @@
     margin-bottom: 60px;
 }
 .landing .blur_region .overview .highlight_flexbox_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .landing .blur_region .overview .highlight_container {
@@ -146,18 +143,20 @@
 }
 
 
-.four_square {
+.customize {
     padding: 150px 30px;
     padding-bottom: 100px;
 }
-.four_square .four_square_wrapper {
+.customize .customize_cards_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: auto;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
-.four_square .four_square_header_container {
+.customize .customize_header_container {
     width: auto;
     max-width: 1200px;
     margin-left: auto;
@@ -169,14 +168,14 @@
     font-size: 18px;
     text-align: left;
 }
-.four_square .four_square_header_container h1 {
+.customize .customize_header_container h1 {
     font-weight: 400;
     font-size: 36px;
     letter-spacing: .06em;
     line-height: 1.05em;
     margin-left: 70px;
 }
-.four_square .four_square_header_container h2 {
+.customize .customize_header_container h2 {
     font-weight: 600;
     font-size: 56px;
     letter-spacing: .01em;
@@ -184,7 +183,7 @@
     padding-bottom: 30px;
     margin-left: 70px;
 }
-.four_square .four_square_header_container p {
+.customize .customize_header_container p {
     max-width: 700px;
     font-weight: 400;
     font-size: 20px;
@@ -192,31 +191,31 @@
     line-height: 1.5em;
     margin-left: 70px;
 }
-.four_square .square_info_container {
+.customize .square_info_container {
     width: auto;
     margin-left: auto;
     margin-right: auto;
     transition-duration: 0.3s;
 }
-.four_square .four_square_wrapper #left {
+.customize .customize_cards_container #left {
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
 }
-.four_square .four_square_wrapper #center {
+.customize .customize_cards_container #center {
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 }
-.four_square .four_square_wrapper #right {
+.customize .customize_cards_container #right {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
 }
-.four_square .square_info_container .square_border_wrapper {
+.customize .square_info_container .square_border_wrapper {
     padding: 10px;
 }
-.four_square .square_info_container img {
+.customize .square_info_container img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -224,7 +223,7 @@
     position: center;
     background-size: contain;
 }
-.four_square .square_info_container h1 {
+.customize .square_info_container h1 {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.05em;
     font-weight: 600;
@@ -277,16 +276,16 @@
 }
 .themes .themes_banner_container img {
     transition: all 0.5s;
-    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.6);
 }
 .themes .theme_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 .themes .theme_card {
     margin: 0 10px;
-    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.6);
     transition: all 0.3s;
 
     /* remove 1px padding below images */
@@ -371,13 +370,13 @@
 
     max-width: 700px;
 }
-
 #lifestyle .text_container {
     text-align: right;
 }
 #lifestyle .text_container p {
     margin-left: auto;
 }
+
 
 .community_wrapper {
     width: auto;
@@ -388,12 +387,16 @@
     padding-bottom: 150px;
 }
 .community .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .community .container .discordc, .community .container .guide {
     width: 50%;
 }
 .community .container .discord_wrapper, .community .container .guide_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 45px 35px;
 }
@@ -411,12 +414,6 @@
     vertical-align: text-top;
     margin-bottom: auto;
     border-radius: 12px;
-}
-.community .container #community_discord img {
-    box-shadow: 3px 3px 6px rgba(86, 111, 194, 0.1);
-}
-.community .container #community_guide img {
-    box-shadow: 3px 3px 6px rgba(254, 199, 0, 0.1);
 }
 .community .container h1,
 .community .container p,

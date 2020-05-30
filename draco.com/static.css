@@ -18,6 +18,8 @@
     top: 0;
     left: 0;
     right: 0;
+
+    z-index: 2;
 }
 .nav_bar img {
     height: 25px;
@@ -154,41 +156,17 @@
 }
 
 @media screen and (max-width: 650px) {
-    .dropdown_menu button {
-        font-size: 20px
-    }
-
     .nav_bar {
         padding-top: 0px;
-    }
-    .nav_bar .hamburger {
-        position: absolute;
-        display: block;
-        cursor: pointer;
-        right: 0;
-    }
-    .left_header {
-        display: none;
     }
     .right_header {
         display: none;
     }
-    .left_header div {
-        margin-right: 15px;
-    }
     .right_header div {
         margin-left: 15px;
     }
-    .center_header .header_logo figure {
-        width: 125px;
-        height: 87px;
-    }
-    .left_header a,
     .right_header a {
         font-size: 14px;
-    }
-    .center_header a {
-        font-size: 12px;
     }
 
     .footer {
@@ -214,17 +192,9 @@
     }
 }
 
+/* THEMING */
 
-/* 
- * ON SYSTEMS WITHOUT DARK MODE SUPPORT (E.G. PRE-iOS 13), NO THEMING WILL OCCUR
- * BECAUSE IT WILL NOT DEFAULT TO LIGHT THEME. THE WORKAROUND IS TO REMOVE THE
- * @MEDIA (PREFERS-COLOR-SCHEME) RULE SO IT DEFAULTS TO ONE OF THE THEMES.
- * HERE, WE DEFAULT TO DARK THEME BUT IF A DEVICE THAT SUPPORTS (PREFERS-COLOR-SCHEME)
- * IS USING LIGHT THEME, THE LIGHT THEME CSS WILL OVERRIDE THE DEFAULT BECAUSE
- * IT IS DECLARED LATER IN THE FILE. HTML PRIORITIZES CSS IN ORDER OF NEWEST TO OLDEST.
- */
-
- .right_header a {
+.right_header a {
     color: rgb(192, 198, 207);
 }
 .right_header #active {
@@ -234,16 +204,7 @@
     color: #f0d5b6;
 }
 .right_header a:hover {
-    color: #f34115;
-}
-.center_header {
-    background-color: rgb(37, 37, 37);
-}
-.center_header a {
-    color: #ffffff;
-}
-.center_header .header_logo figure {
-    background-image: url("images/logo_white.png");
+    color: rgb(135, 148, 165);
 }
 
 .footer {
@@ -273,32 +234,4 @@
 
 .copyright {
     color: rgb(185, 185, 185);
-}
-
-
-@media screen and (prefers-color-scheme: light) {
-    .left_header a,
-    .right_header a {
-        color: rgb(139, 139, 139);
-    }
-    .nav_bar .current {
-        color: #424242;
-    }
-    .left_header a:hover,
-    .right_header a:hover {
-        color: #2f2f2f;
-    }
-    .center_header {
-        background-color: white;
-    }
-    .center_header a {
-        color: #292929;
-    }
-    .center_header .header_logo figure {
-        background-image: url("images/logo_dark.png");
-    }
-
-    .copyright {
-        color: #d1d1d1;
-    }
 }

@@ -2,6 +2,9 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+.landing .bg_wrapper {
+    background-image: linear-gradient(to right, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.9));
+}
 .landing .landing_title h1 {
     color: rgb(135, 148, 165);
 }
@@ -51,6 +54,13 @@ body {
 .landing .blur_region .overview .highlight_container p {
     color: rgb(192, 198, 207);
 }
+.landing .landing_title a {
+    color: rgb(135, 148, 165);
+    background-color: rgb(222, 223, 226);
+}
+.landing #download {
+    background-color: rgba(222, 223, 226, 0);
+}
 
 
 .preview_bar .preview_wrapper .preview_feature_container h1 {
@@ -84,22 +94,22 @@ body {
     color: rgb(200, 200, 200);
 }
 
-.four_square {
+.customize {
     background-color: rgb(25, 25, 25);
 }
-.four_square .four_square_header_container h1 {
+.customize .customize_header_container h1 {
     color: rgb(136, 136, 136);
 }
-.four_square .four_square_header_container h2 {
+.customize .customize_header_container h2 {
     color: rgb(221, 221, 221);
 }
-.four_square .four_square_header_container p {
+.customize .customize_header_container p {
     color: rgb(190, 190, 190);
 }
-.four_square .square_info_container .square_border_wrapper {
+.customize .square_info_container .square_border_wrapper {
     background-color: rgb(42, 42, 42);
 }
-.four_square .square_info_container h1 {
+.customize .square_info_container h1 {
     color: rgb(190, 190, 190);
 }
 
@@ -118,6 +128,12 @@ body {
 }
 .themes .themes_wrapper .themes_banner_container h1 {
     color: #e8c4b8;
+}
+.themes .themes_banner_container img {
+    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.6);
+}
+.themes .theme_card {
+    box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -148,4 +164,10 @@ body {
 }
 .community .container a {
     color: rgb(129, 169, 255);
+}
+.community .container #community_discord img {
+    box-shadow: 3px 3px 6px rgba(86, 111, 194, 0.1);
+}
+.community .container #community_guide img {
+    box-shadow: 3px 3px 6px rgba(254, 199, 0, 0.1);
 }

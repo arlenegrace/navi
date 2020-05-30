@@ -1,7 +1,6 @@
 function open_nav(x) {
     x.classList.toggle("change");
-    let dropdown = document.getElementById('dropdown_menu_id');
-    dropdown.style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+    document.getElementById('dropdown_menu_id').style.height = dropdown.style.height == '100%' ? '0%' : '100%';
 }
 
 function theme_banner_light() {
