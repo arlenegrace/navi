@@ -21,11 +21,9 @@ body {
  * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
  */
 @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-    .landing {
-        height: 900px;
-    }
     .landing_container {
         padding-top: 200px;
+        padding-bottom: 240px;
     }
     .landing .landing_title p {
         max-width: 580px;

@@ -1,6 +1,56 @@
+.nav_bar {
+    padding: 30px 50px;
+    padding-top: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: auto;
+    max-width: 1300px;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+}
+.nav_bar img {
+    height: 25px;
+}
+.nav_bar nav {
+    display: flex;
+}
+.right_header {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    margin-left: auto;
+    margin-right: 0;
+}
+.right_header div {
+    margin-left: 50px;
+}
+.right_header a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: .06em;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+
 .landing {
-    height: 800px;
     position: relative;
+    padding: 0 50px;
 }
 .landing .bg_wrapper {
     height: 100%;
@@ -20,9 +70,11 @@
     background-repeat: no-repeat;
 }
 .landing_container {
-    width: 1200px;
+    width: auto;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 220px;
+    padding-bottom: 100px;
 }
 .landing_title {
     max-width: 800px;
@@ -70,6 +122,7 @@
 }
 .landing .blur_region {
     display: none;
+    padding: 0 50px;
 }
 .landing .blur_region .overview {
     width: auto;
@@ -105,7 +158,7 @@
 
 
 .app_preview {
-    padding: 150px 30px;
+    padding: 150px 50px;
 }
 .app_preview .app_preview_wrapper {
     width: auto;
@@ -144,7 +197,7 @@
 
 
 .customize {
-    padding: 150px 30px;
+    padding: 150px 50px;
     padding-bottom: 100px;
 }
 .customize .customize_cards_container {
@@ -237,7 +290,7 @@
 
 
 .themes {
-    padding: 150px 30px;
+    padding: 150px 50px;
     padding-top: 100px;
     padding-bottom: 0px;
 }
@@ -338,7 +391,7 @@
 }
 .lifestyle .lifestyle_gradient_wrapper,
 .automate .automate_gradient_wrapper {
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 .lifestyle .lifestyle_wrapper,
 .automate .automate_wrapper {
@@ -377,7 +430,9 @@
     margin-left: auto;
 }
 
-
+.community {
+    padding: 0 50px;
+}
 .community_wrapper {
     width: auto;
     max-width: 1200px;
@@ -435,4 +490,86 @@
 .community .container a {
     cursor: pointer;
     font-size: 15px;
+}
+
+
+.footer {
+    padding: 30px 50px;
+}
+.footer .footer_container {
+    width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0px;
+}
+.footer .logo_wrapper {
+    width: 30%;
+    margin-right: auto;
+    display: flex;
+}
+.footer .logo_wrapper figure {
+    background-image: url("images/logo_light.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 20px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer .logo_wrapper h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+    margin: auto 0;
+}
+.social {
+    width: 30%;
+    margin: 0 auto;
+}
+.social .social_container {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.copyright {
+    width: 30%;
+    height: 30px;
+    margin-left: auto;
+    display: flex;
+}
+.copyright h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+.youtube,
+.instagram,
+.twitter,
+.discord,
+.github {
+    margin-left: 7px;
+    margin-right: 7px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    transition: all 0.2s;
+}
+.youtube:hover,
+.instagram:hover,
+.twitter:hover,
+.discord:hover,
+.github:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
 }
