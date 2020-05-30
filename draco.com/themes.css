@@ -6,14 +6,41 @@ body {
     color: rgb(135, 148, 165);
 }
 .landing .landing_title p {
-    color: rgb(184, 189, 197);
+    color: rgb(173, 177, 185); 
 }
 .landing .landing_container h2 {
     color: rgb(192, 198, 207);
 }
-.landing .blur_region {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    /* background-image: linear-gradient(to right, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.9)); */
+/*
+ * SOME BROWSERS LIKE FIREFOX DO NOT SUPPORT BACKDROP-FILTER YET, AND THE BLUR DIV
+ * WAS DESIGNED WITH THAT PROPERTY IN MIND. BY DEFAULT, THE ENTIRE BLURRED SECTION
+ * WILL BE REMOVED IF THE BROWSER DOES NOT SUPPORT THIS CSS PROPERTY. THIS SECTION
+ * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
+ */
+@supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
+    .landing {
+        height: 900px;
+    }
+    .landing_container {
+        padding-top: 200px;
+    }
+    .landing .landing_title p {
+        max-width: 580px;
+    }
+    .landing .blur_region {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_2.jpg");
+    }
 }
 .landing .blur_region .overview h1 {
     color: rgb(135, 148, 165);
@@ -64,13 +91,13 @@ body {
     color: rgb(136, 136, 136);
 }
 .four_square .four_square_header_container h2 {
-    color: rgb(209, 209, 209);
+    color: rgb(221, 221, 221);
 }
 .four_square .four_square_header_container p {
     color: rgb(190, 190, 190);
 }
 .four_square .square_info_container .square_border_wrapper {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(42, 42, 42);
 }
 .four_square .square_info_container h1 {
     color: rgb(190, 190, 190);
@@ -78,19 +105,19 @@ body {
 
 
 .themes {
-    background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(37, 37, 37));
+    background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(42, 42, 42));
 }
 .themes .themes_wrapper {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(42, 42, 42);
 }
 .themes .themes_wrapper .themes_header_container h1 {
-    color: rgb(214, 214, 214);
+    color: rgb(221, 221, 221);
 }
 .themes .themes_wrapper .themes_header_container p {
     color: rgb(192, 192, 192);
 }
-.themes .themes_wrapper .theme_group h1 {
-    color: rgb(151, 151, 151);
+.themes .themes_wrapper .themes_banner_container h1 {
+    color: #e8c4b8;
 }
 
 
@@ -114,22 +141,11 @@ body {
     background-color: rgb(231, 232, 236);
 }
 .community .container h1 {
-    color: rgb(192, 198, 207);
+    color: rgb(186, 192, 200);
 }
 .community .container p {
     color: rgb(135, 148, 165);
 }
 .community .container a {
     color: rgb(129, 169, 255);
-}
-
-
-.landing .landing_title h1 {
-    color: rgb(135, 148, 165);
-}
-.landing .landing_title p {
-    color: rgb(192, 198, 207);
-}
-.landing .landing_container h2 {
-    color: rgb(192, 198, 207);
 }

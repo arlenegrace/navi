@@ -50,6 +50,13 @@
 }
 
 
+.landing .bg_wrapper figure {
+    -webkit-animation: zoom_out 1s;
+    -moz-animation:    zoom_out 1s;
+    -ms-animation:     zoom_out 1s;
+    -o-animation:      zoom_out 1s;
+    animation:         zoom_out 1s;
+}
 .landing .bg_wrapper img {
     -webkit-animation: zoom_out 1s;
     -moz-animation:    zoom_out 1s;
