@@ -1,72 +1,58 @@
 @media screen and (max-width: 1300px) {
-    
+    .footer {
+        padding: 20px 50px;
+    }
+    .copyright {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
-    .landing_container {
-        padding-top: 100px;
+    .right_header a {
+        font-size: 16px;
     }
-    .landing_title {
+    
+    .footer {
+        padding: 20px 30px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav_bar {
+        padding-top: 0px;
+    }
+    .right_header {
+        display: none;
+    }
+    .right_header div {
+        margin-left: 15px;
+    }
+    .right_header a {
+        font-size: 14px;
+    }
+
+    .footer {
         width: auto;
-    }
-    .landing .landing_container .landing_icon_container {
-        width: auto;
-    }
-    .landing .landing_container .landing_icon_container span img {
-        width: 70px;
-        height: 70px;
-    }
-    .landing .landing_container h1 {
-        font-size: 46px;
-    }
-    .landing .landing_container p {
-        font-size: 18px;
+        padding: 20px 15px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .landing_container {
+    .social {
         width: auto;
-        margin: 0 auto;
-        padding: 50px 15px;
-        padding-top: 75px;
-    }
-    .landing_title {
-        width: auto;
-        padding-bottom: 50px;
-        margin: 0 auto;
-    }
-    .landing .landing_container h1,
-    .landing .landing_container p {
-        font-family: 'Open Sans', sans-serif;
-        text-align: center;
-    }
-    .landing .landing_container h1 {
+        margin-top: 30px;
         margin-bottom: 30px;
-        font-weight: 700;
-        font-size: 36px;
-        text-transform: uppercase;
     }
-    .landing .landing_container p {    
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.25;
-        letter-spacing: 0.02em;
+    .social_container {
+        width: 250px;
+        margin-right: 0px;
+        margin-left: auto;
     }
-    .landing .landing_container .landing_icon_container {
-        display: flex;
-    }
-    .landing .landing_container .landing_icon_container span {
-        width: 20vw;
-        margin: 0 auto;
-    }
-    .landing .landing_container .landing_icon_container span h1 {
-        display: none;
-    }
-    .landing .landing_container .landing_icon_container span img {
-        width: 50px;
-        height: 50px;
-        margin: 0 auto;
-        display: block;
+    .copyright {
+        font-size: 12px;
+        width: auto;
     }
 }
