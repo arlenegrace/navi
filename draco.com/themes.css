@@ -29,35 +29,6 @@ body {
 .landing .landing_container h2 {
     color: rgb(192, 198, 207);
 }
-/*
- * SOME BROWSERS LIKE FIREFOX DO NOT SUPPORT BACKDROP-FILTER YET, AND THE BLUR DIV
- * WAS DESIGNED WITH THAT PROPERTY IN MIND. BY DEFAULT, THE ENTIRE BLURRED SECTION
- * WILL BE REMOVED IF THE BROWSER DOES NOT SUPPORT THIS CSS PROPERTY. THIS SECTION
- * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
- */
-@supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-    .landing_container {
-        padding-top: 200px;
-        padding-bottom: 240px;
-    }
-    .landing .landing_title p {
-        max-width: 580px;
-    }
-    .landing .blur_region {
-        display: block;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-    }
-    .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_2.jpg");
-    }
-}
 .landing .blur_region .overview h1 {
     color: rgb(135, 148, 165);
 }

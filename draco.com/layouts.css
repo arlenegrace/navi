@@ -1,4 +1,160 @@
+/*
+ * SOME BROWSERS LIKE FIREFOX DO NOT SUPPORT BACKDROP-FILTER YET, AND THE BLUR DIV
+ * WAS DESIGNED WITH THAT PROPERTY IN MIND. BY DEFAULT, THE ENTIRE BLURRED SECTION
+ * WILL BE REMOVED IF THE BROWSER DOES NOT SUPPORT THIS CSS PROPERTY. THIS SECTION
+ * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
+ */
+ @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
+    .landing_container {
+        padding-top: 200px;
+        padding-bottom: 340px;
+    }
+    .landing .landing_title p {
+        max-width: 580px;
+    }
+    .landing .blur_region {
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+    .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_2.jpg");
+    }
+}
+
 @media screen and (max-width: 1300px) {
+    .landing_container {
+        padding-top: 160px;
+        padding-bottom: 190px;
+    }
+    .landing .blur_region .overview {
+        padding: 70px 0;
+    }
+    .landing .landing_title a {
+        font-size: 10px;
+        padding: 5px 6px;
+    }
+    .landing #download {
+        font-size: 16px;
+    }
+    .landing .landing_title h1 {
+        font-size: 68px;
+        margin-bottom: 20px;
+    }
+    .landing .landing_title p {
+        font-size: 16px;
+        line-height: 1.6;
+
+        max-width: 43vw;
+        margin-bottom: 25px;
+    }
+    .landing .blur_region .overview .highlight_container {
+        margin-right: 110px;
+    }
+    .landing .blur_region .overview .highlight_container h3 {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    .landing .blur_region .overview .highlight_container p {
+        font-size: 15px;
+    }
+    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
+        .landing_container {
+            padding-top: 160px;
+            padding-bottom: 250px;
+        }
+    }
+
+
+    .app_preview .app_preview_wrapper h1,
+    .app_preview .app_preview_wrapper p {
+        margin: 0 6vw;
+    }
+    .app_preview .app_preview_wrapper h1 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .app_preview .app_preview_wrapper p {
+        font-size: 24px;
+        letter-spacing: .01em;
+        line-height: 1.6em;
+    }
+
+
+    .lifestyle .lifestyle_wrapper,
+    .automate .automate_wrapper {
+        padding: 100px 0px;
+    }
+    .lifestyle .text_container h1,
+    .automate .text_container h1 {
+        font-size: 40px;
+        letter-spacing: .05em;
+    }
+    .lifestyle .text_container p,
+    .automate .text_container p {
+        line-height: 1.7em;
+        font-size: 16px;
+        max-width: 50vw;
+    }
+
+
+    .customize .customize_header_container h1 {
+        font-size: 28px;
+        margin-left: 6vw;
+    }
+    .customize .customize_header_container h2 {
+        font-size: 46px;
+        padding-bottom: 20px;
+        margin-left: 6vw;
+    }
+    .customize .customize_header_container p {
+        font-size: 18px;
+        margin-left: 6vw;
+        max-width: 50vw;
+    }
+
+
+    .themes .themes_wrapper {
+        padding-top: 120px;
+    }
+    .themes .themes_wrapper .themes_header_container {
+        width: 40vw;
+        padding-bottom: 80px;
+    }
+    .themes .themes_wrapper .themes_header_container h1 {
+        font-size: 44px;
+        padding-bottom: 20px;
+    }
+    .themes .themes_wrapper .themes_header_container p {
+        font-size: 16px;
+    }
+    .themes .themes_wrapper .themes_banner_container h1 {
+        font-size: 20px;
+    }
+
+
+    .community .container .discord_wrapper,
+    .community .container .guide_wrapper {
+        padding: 35px 25px;
+    }
+    .community .container h1 {
+        font-size: 13px;
+    }
+    .community .container p {
+        font-size: 14px;
+        padding-bottom: 25px;
+    }
+    .community .container a {
+        font-size: 12px;
+    }
+
+
     .footer {
         padding: 20px 50px;
     }
@@ -7,7 +163,8 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+/* START TABLET LAYOUT */
+@media screen and (max-width: 1050px) {
     .right_header a {
         font-size: 16px;
     }
