@@ -30,18 +30,18 @@
 
 @media screen and (max-width: 1300px) {
     .landing_container {
-        padding-top: 160px;
-        padding-bottom: 190px;
+        padding-top: 190px;
+        padding-bottom: 170px;
     }
     .landing .blur_region .overview {
-        padding: 70px 0;
+        padding: 75px 0;
     }
     .landing .landing_title a {
         font-size: 10px;
         padding: 5px 6px;
     }
     .landing #download {
-        font-size: 16px;
+        font-size: 17px;
     }
     .landing .landing_title h1 {
         font-size: 68px;
@@ -74,7 +74,7 @@
 
     .app_preview .app_preview_wrapper h1,
     .app_preview .app_preview_wrapper p {
-        margin: 0 6vw;
+        margin: 0 7vw;
     }
     .app_preview .app_preview_wrapper h1 {
         font-size: 16px;
@@ -116,7 +116,7 @@
     .customize .customize_header_container p {
         font-size: 18px;
         margin-left: 6vw;
-        max-width: 50vw;
+        max-width: 550px;
     }
 
 
@@ -124,8 +124,7 @@
         padding-top: 120px;
     }
     .themes .themes_wrapper .themes_header_container {
-        width: 40vw;
-        padding-bottom: 80px;
+        width: 500px;
     }
     .themes .themes_wrapper .themes_header_container h1 {
         font-size: 44px;
@@ -135,7 +134,7 @@
         font-size: 16px;
     }
     .themes .themes_wrapper .themes_banner_container h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
 
