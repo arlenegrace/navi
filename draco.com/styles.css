@@ -451,7 +451,7 @@
 .community .container .discord_wrapper,
 .community .container .guide_wrapper {
     display: flex;
-    padding: 45px 35px;
+    padding: 50px 35px;
 }
 .community .container .discordc {
     padding-right: 30px;
@@ -477,17 +477,17 @@
 }
 .community .container h1 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
 }
 .community .container p {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.7;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 .community .container a {
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
