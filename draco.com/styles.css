@@ -81,6 +81,7 @@
     margin-right: auto;
     margin-left: 0px;
 }
+.landing a,
 .landing .landing_title h1,
 .landing .landing_title a,
 .landing .landing_title p {
@@ -90,6 +91,10 @@
     display: block;
     margin-bottom: 20px;
 }
+.landing .available_mobile {
+    display: none;
+}
+.landing a,
 .landing .landing_title a {
     font-weight: 700;
     font-size: 12px;
@@ -138,8 +143,6 @@
     margin-bottom: 60px;
 }
 .landing .blur_region .overview .highlight_flexbox_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 }
 .landing .blur_region .overview .highlight_container {
@@ -160,7 +163,7 @@
 
 
 .app_preview {
-    padding: 150px 50px;
+    padding: 150px 0px;
 }
 .app_preview .app_preview_wrapper {
     width: auto;
@@ -169,6 +172,9 @@
 
     margin-left: auto;
     margin-right: auto;
+}
+.app_preview .app_preview_wrapper #rectangle {
+    display: none;
 }
 .app_preview .app_preview_wrapper img {
     width: 100%;
@@ -203,8 +209,6 @@
     padding-bottom: 100px;
 }
 .customize .customize_cards_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: auto;
     max-width: 1200px;
@@ -216,6 +220,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 70px;
     padding-bottom: 80px;
 
     font-family: 'Open Sans', sans-serif;
@@ -228,7 +233,6 @@
     font-size: 36px;
     letter-spacing: .06em;
     line-height: 1.05em;
-    margin-left: 70px;
 }
 .customize .customize_header_container h2 {
     font-weight: 600;
@@ -236,7 +240,6 @@
     letter-spacing: .01em;
     line-height: 1.5em;
     padding-bottom: 30px;
-    margin-left: 70px;
 }
 .customize .customize_header_container p {
     max-width: 700px;
@@ -244,7 +247,6 @@
     font-size: 20px;
     letter-spacing: .06em;
     line-height: 1.6em;
-    margin-left: 70px;
 }
 .customize .square_info_container {
     width: auto;
@@ -292,17 +294,19 @@
 
 
 .themes {
-    padding: 150px 50px;
+    padding: 150px 0px;
     padding-top: 100px;
     padding-bottom: 0px;
 }
-.themes .themes_wrapper {
+.themes .themes_bg_wrapper {
     width: auto;
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0 auto;
+}
+.themes .themes_wrapper {
+    width: auto;
+    max-width: 1100px;
+    margin: 0 auto;
     padding-top: 150px;
     padding-bottom: 150px;
 }
@@ -331,8 +335,6 @@
     transition: all 0.5s;
 }
 .themes .theme_row {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -430,6 +432,7 @@
     margin-left: auto;
 }
 
+
 .community {
     padding: 0 50px;
 }
@@ -502,7 +505,7 @@
     padding: 30px 0px;
 }
 .footer .logo_wrapper {
-    width: 30%;
+    width: 33%;
     margin-right: auto;
     display: flex;
 }
@@ -524,7 +527,7 @@
     margin: auto 0;
 }
 .social {
-    width: 30%;
+    width: 33%;
     margin: 0 auto;
 }
 .social .social_container {
@@ -534,7 +537,7 @@
     justify-content: center;
 }
 .copyright {
-    width: 30%;
+    width: 33%;
     height: 30px;
     margin-left: auto;
     display: flex;

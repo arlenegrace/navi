@@ -9,7 +9,7 @@
         <script src="scripts.js"></script>
 
         <link rel="stylesheet" href="reset.css">
-        <!-- <link rel="stylesheet" href="animations.css"> -->
+        <link rel="stylesheet" href="animations.css">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="themes.css">
         <link rel="stylesheet" href="layouts.css">
@@ -37,7 +37,7 @@
         <meta property="og:title" content="The fast and modern all-in-one hypebeast tool.">
         <meta property="og:description" content="Quickly and easily shop for limited streetwear and clothing without having to worry about stock.">
         <meta property="og:image" content="images/logo.png">
-        <!-- <meta property="og:url" content="https://www.navibot.dev/"> -->
+        <meta property="og:url" content="https://www.infinitylabs.dev/navi_rc1/">
         
         <title>Navi Bot</title>
     </head>
@@ -79,6 +79,9 @@
                         news sources, and get a visual overview of
                         your collection, all within one app.
                     </p>
+                    <div class="available_mobile">
+                        <a>Available 2021</a>
+                    </div>
                     <a href="https://github.com/arlenegrace/navi" id="download">Source</a>
                 </div>
             </div>
@@ -110,7 +113,8 @@
 
         <section class="app_preview">
             <div class="app_preview_wrapper">
-                <img src="images/Render shadow.png">
+                <img src="images/olivia_shadow.png" id="rounded">
+                <img src="images/olivia_shadow_rectangle.png" id="rectangle">
 
                 <h1>
                     — OVERVIEW
@@ -175,46 +179,48 @@
         </section>
 
         <section class="themes">
-            <div class="themes_wrapper">
-                <div class="themes_header_container">
-                    <!-- <img src="images/icon-vsc.png"> -->
-                    <h1>
-                        Themes
-                    </h1>
-                    <p>
-                        A beautiful interface makes an application more inviting to use. That's why
-                        Navi comes with five beautifully designed themes to compliment its modern
-                        interface.
-                    </p>
+            <div class="themes_bg_wrapper">
+                <div class="themes_wrapper">
+                    <div class="themes_header_container">
+                        <!-- <img src="images/icon-vsc.png"> -->
+                        <h1>
+                            Themes
+                        </h1>
+                        <p>
+                            A beautiful interface makes an application more inviting to use. That's why
+                            Navi comes with five beautifully designed themes to compliment its modern
+                            interface.
+                        </p>
+                    </div>
+    
+                    <div class="themes_banner_container">
+                        <div class="square_border_wrapper">
+                            <h1 id="themes_title">— Olivia</h1>
+                            <img id="themes_banner" src="images/themes/olivia.jpg">
+                        </div>
+                    </div>
+    
+                    <div class="theme_row">
+    
+                        <div class="theme_card" id="theme_card_left">
+                            <img src="images/olivia.png" onmouseover="theme_banner_olivia()">
+                        </div>
+                        <div class="theme_card">
+                            <img src="images/mizu.png" onmouseover="theme_banner_mizu()">
+                        </div>
+                        <div class="theme_card">
+                            <img src="images/light.png" onmouseover="theme_banner_light()">
+                        </div>
+                        <div class="theme_card">
+                            <img src="images/alter.png" onmouseover="theme_banner_alter()">
+                        </div>
+                        <div class="theme_card" id="theme_card_right">
+                            <img src="images/nautilus.png" onmouseover="theme_banner_nautilus()">
+                        </div>
+    
+                    </div>
+    
                 </div>
-
-                <div class="themes_banner_container">
-                    <div class="square_border_wrapper">
-                        <h1 id="themes_title">— Olivia</h1>
-                        <img id="themes_banner" src="images/themes/olivia.jpg">
-                    </div>
-                </div>
-
-                <div class="theme_row">
-
-                    <div class="theme_card" id="theme_card_left">
-                        <img src="images/olivia.png" onmouseover="theme_banner_olivia()">
-                    </div>
-                    <div class="theme_card">
-                        <img src="images/mizu.png" onmouseover="theme_banner_mizu()">
-                    </div>
-                    <div class="theme_card">
-                        <img src="images/light.png" onmouseover="theme_banner_light()">
-                    </div>
-                    <div class="theme_card">
-                        <img src="images/alter.png" onmouseover="theme_banner_alter()">
-                    </div>
-                    <div class="theme_card" id="theme_card_right">
-                        <img src="images/nautilus.png" onmouseover="theme_banner_nautilus()">
-                    </div>
-
-                </div>
-
             </div>
         </section>
 
@@ -281,7 +287,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <h1>Source code at github.com/arlenegrace</h1>
+                    <h1>github.com/arlenegrace</h1>
                 </div>
             </div>
         </footer>

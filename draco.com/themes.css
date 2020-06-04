@@ -17,9 +17,6 @@ body {
 }
 
 
-.landing .bg_wrapper {
-    background-image: linear-gradient(to right, rgba(20, 20, 20, 0), rgba(20, 20, 20, 0.9));
-}
 .landing .landing_title h1 {
     color: rgb(135, 148, 165);
 }
@@ -38,6 +35,7 @@ body {
 .landing .blur_region .overview .highlight_container p {
     color: rgb(192, 198, 207);
 }
+.landing a,
 .landing .landing_title a {
     color: rgb(135, 148, 165);
     background-color: rgb(222, 223, 226);
@@ -48,7 +46,7 @@ body {
 
 
 .app_preview {
-    background-image: linear-gradient(to bottom, rgb(209, 216, 226), rgb(241, 241, 241));
+    background-image: linear-gradient(to bottom, rgb(215, 223, 235), rgb(241, 241, 241));
 }
 .app_preview .app_preview_wrapper h1 {
     color: rgb(184, 189, 197);
@@ -65,10 +63,10 @@ body {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 #lifestyle .text_container h1 {
-    color: rgb(218, 218, 218);
+    color: rgb(236, 236, 236);
 }
 #lifestyle .text_container p {
-    color: rgb(200, 200, 200);
+    color: rgb(218, 218, 218);
 }
 
 
@@ -79,7 +77,7 @@ body {
     color: rgb(136, 136, 136);
 }
 .customize .customize_header_container h2 {
-    color: rgb(221, 221, 221);
+    color: rgb(236, 236, 236);
 }
 .customize .customize_header_container p {
     color: rgb(190, 190, 190);
@@ -95,14 +93,14 @@ body {
 .themes {
     background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(42, 42, 42));
 }
-.themes .themes_wrapper {
+.themes .themes_bg_wrapper {
     background-color: rgb(42, 42, 42);
 }
 .themes .themes_wrapper .themes_header_container h1 {
-    color: rgb(221, 221, 221);
+    color: rgb(236, 236, 236);
 }
 .themes .themes_wrapper .themes_header_container p {
-    color: rgb(192, 192, 192);
+    color: rgb(182, 182, 182);
 }
 .themes .themes_wrapper .themes_banner_container h1 {
     color: #e8c4b8;

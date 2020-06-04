@@ -111,18 +111,19 @@
     }
 
 
+    .customize .customize_header_container {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
     .customize .customize_header_container h1 {
         font-size: 28px;
-        margin-left: 6vw;
     }
     .customize .customize_header_container h2 {
         font-size: 46px;
         padding-bottom: 20px;
-        margin-left: 6vw;
     }
     .customize .customize_header_container p {
         font-size: 18px;
-        margin-left: 6vw;
         max-width: 550px;
     }
 
@@ -169,6 +170,15 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .app_preview .app_preview_wrapper #rectangle {
+        display: block;
+    }
+    .app_preview .app_preview_wrapper #rounded {
+        display: none;
+    }
+}
+
 /* START TABLET LAYOUT */
 @media screen and (max-width: 1050px) {
     .nav_bar {
@@ -183,7 +193,6 @@
 
 
     .landing {
-        position: relative;
         padding: 0 30px;
     }
     .landing .landing_title a {
@@ -225,7 +234,7 @@
 
 
     .app_preview {
-        padding: 120px 30px;
+        padding: 120px 0px;
     }
     .app_preview .app_preview_wrapper img {
         padding-bottom: 0px;
@@ -271,12 +280,6 @@
     }
 
 
-    .themes {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-
     .community {
         padding: 0 30px;
     }
@@ -296,11 +299,225 @@
 }
 
 @media screen and (max-width: 860px) {
+    .nav_bar {
+        padding: 50px 7vw;
+    }
+
+
+    .landing {
+        padding: 0 7vw;
+        height: 751px;
+    }
+    .landing .landing_title .available {
+        display: none;
+    }
+    .landing .landing_title .available_mobile {
+        display: inline-block;
+    }
+    .landing .landing_title .available_mobile a {
+        font-size: 15px;
+    }
+    .landing_container {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_mobile_gradient.jpg");
+    }
+    .landing .landing_title {
+        max-width: none;
+        padding: 50px 7vw;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    .landing .landing_title a {
+        font-size: 10px;
+        padding: 4px 8px;
+        background-color: rgb(234, 237, 241);
+        margin-right: 20px;
+    }
+    .landing .landing_title h1 {
+        font-size: 48px;
+    }
+    .landing .landing_title p {
+        font-size: 15px;
+
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    .landing .blur_region {
+        display: none;
+    }
+    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
+        .landing .landing_title {
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+       .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_mobile.jpg");
+       }
+   }
+
+
+    .app_preview {
+        padding: 120px 0vw;
+    }
+    .app_preview .app_preview_wrapper h1 {
+        font-size: 14px;
+    }
+    .app_preview .app_preview_wrapper p {
+        font-size: 20px;
+        letter-spacing: .01em;
+        line-height: 1.6em;
+    }
+
+
+    .lifestyle .lifestyle_gradient_wrapper,
+    .automate .automate_gradient_wrapper {
+        padding: 0px 7vw;
+    }
+
+
+    .customize {
+        padding: 120px 7vw;
+    }
+    .customize .customize_cards_container {
+        flex-direction: column;
+    }
+    .customize .customize_cards_container #left,
+    .customize .customize_cards_container #center,
+    .customize .customize_cards_container #right {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+    .customize .square_info_container .square_border_wrapper {
+        display: flex;
+    }
+    .customize .customize_cards_container #center .square_border_wrapper {
+        flex-direction: row-reverse;
+    }
+    .customize .square_info_container img {
+        width: auto;
+        height: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .customize .square_info_container h1 {
+        margin: 0 auto;
+    }
+
+
+    .themes {
+        padding-top: 0px;
+    }
+
+
+    .community {
+        padding: 0 7vw;
+    }
+    .community .container .discordc {
+        padding-right: 20px;
+    }
+    .community .container .guide {
+        padding-left: 20px;
+    }
+    .community .container .text_container {
+        padding-left: 20px;
+    }
+    .community .container img {
+        width: 45px;
+        border-radius: 10px;
+    }
+
+
+    .footer {
+        padding: 20px 7vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .nav_bar {
+        padding: 50px 40px;
+    }
+
+
+    .landing {
+        padding: 0 30px;
+        height: 700px;
+    }
+    .landing .landing_title {
+        padding: 40px 40px;
+    }
+    .landing .landing_title a {
+        font-size: 9px;
+    }
+    .landing .landing_title h1 {
+        font-size: 42px;
+    }
+
+
+    .app_preview {
+        padding: 100px 0px;
+    }
+
+
+    .lifestyle .lifestyle_gradient_wrapper,
+    .automate .automate_gradient_wrapper {
+        padding: 0px 40px;
+    }
+    .lifestyle .text_container h1,
+    .automate .text_container h1 {
+        font-size: 32px;
+    }
+    .lifestyle .text_container p,
+    .automate .text_container p {
+        font-size: 14px;
+    }
+
+
+    .customize {
+        padding: 120px 40px;
+    }
+
+
+    .community {
+        padding: 0 40px;
+    }
+    .community_wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .community .container {
+        flex-direction: column;
+    }
+    .community .container .discord_wrapper,
+    .community .container .guide_wrapper {
+        padding: 50px 35px;
+    }
+    .community .container .discordc,
+    .community .container .guide {
+        width: auto;
+    }
+    .community .container .discordc {
+        padding-right: 0px;
+        padding-bottom: 40px;
+    }
+    .community .container .guide {
+        padding-left: 0px;
+    }
+    .community .container .text_container {
+        padding-left: 25px;
+    }
 }
 
 @media screen and (max-width: 650px) {
     .nav_bar {
-        padding-top: 0px;
+        padding-top: 20px;
     }
     .right_header {
         display: none;
