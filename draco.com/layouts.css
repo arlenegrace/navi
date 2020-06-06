@@ -165,9 +165,6 @@
     .footer {
         padding: 20px 50px;
     }
-    .copyright {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -287,7 +284,6 @@
         padding-top: 120px;
         padding-bottom: 120px;
     }
-
 
 
     .footer {
@@ -514,6 +510,48 @@
     .community .container .text_container {
         padding-left: 25px;
     }
+
+
+    .footer {
+        padding: 10px 30px;
+    }
+    .footer .footer_container {
+        display: block;
+    }
+    .footer .logo_wrapper,
+    .social,
+    .copyright {
+        width: auto;
+        margin: 0 auto;
+    }
+    .social {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer .logo_wrapper figure {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 18px;
+    }
+    .footer .logo_wrapper h1 {
+        font-size: 17px;
+        margin-right: auto;
+    }
+    .copyright h1 {
+        text-align: center;
+        margin: auto;
+    }
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 27px;
+        height: 27px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -656,20 +694,33 @@
     .community .container .text_container {
         padding-left: 20px;
     }
+}
 
-
+/* SHRINK FOOTER FOR SMALLER PHONES */
+@media screen and (max-width: 400px) {
+    .footer .footer_container {
+        padding: 25px 0px;
+    }
     .social {
-        width: auto;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
-    .social_container {
-        width: 250px;
-        margin-right: 0px;
-        margin-left: auto;
+    .footer .logo_wrapper figure {
+        height: 16px;
     }
-    .copyright {
+    .footer .logo_wrapper h1 {
+        font-size: 14px;
+    }
+    .copyright h1 {
         font-size: 12px;
-        width: auto;
+    }
+
+    .youtube,
+    .instagram,
+    .twitter,
+    .discord,
+    .github {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

@@ -511,6 +511,7 @@
 }
 .footer .logo_wrapper figure {
     background-image: url("images/logo_light.png");
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -538,7 +539,6 @@
 }
 .copyright {
     width: 33%;
-    height: 30px;
     margin-left: auto;
     display: flex;
 }
