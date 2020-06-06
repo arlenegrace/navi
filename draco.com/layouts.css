@@ -345,8 +345,9 @@
     .landing .landing_title p {
         font-size: 15px;
 
-        max-width: 600px;
+        max-width: 500px;
         margin-bottom: 30px;
+        color: rgb(187, 192, 200);
     }
     .landing .blur_region {
         display: none;
@@ -402,8 +403,8 @@
         flex-direction: row-reverse;
     }
     .customize .square_info_container img {
-        width: auto;
-        height: 250px;
+        width: 50%;
+        height: 100%;
         margin-left: 0;
         margin-right: 0;
     }
@@ -536,6 +537,127 @@
 }
 
 @media screen and (max-width: 600px) {
+    .landing {
+        padding: 0 15px;
+        height: 700px;
+    }
+    .landing .landing_title {
+        padding: 40px 15px;
+    }
+    .landing .landing_title .available_mobile a {
+        font-size: 13px;
+    }
+    .landing .landing_title a {
+        font-size: 9px;
+    }
+    .landing .landing_title h1 {
+        font-size: 36px;
+    }
+    .landing .landing_title p {
+        font-size: 14px;
+    }
+
+
+    .app_preview {
+        padding: 80px 0vw;
+    }
+
+
+    #lifestyle .lifestyle_gradient_wrapper,
+    #automate .automate_gradient_wrapper {
+        padding: 0px 15px;
+        background-image: none;
+        background-color: rgba(0, 0, 0, 0.712);
+    }
+    .lifestyle .lifestyle_wrapper,
+    .automate .automate_wrapper {
+        padding: 60px 0px;
+    }
+    .lifestyle .text_container p,
+    .automate .text_container p {
+        max-width: none;
+    }
+
+
+    .customize {
+        padding: 80px 0px;
+        padding-bottom: 80px;
+    }
+    .customize .customize_header_container {
+        padding: 0 6vw;
+        padding-bottom: 60px;
+    }
+    .customize .customize_header_container h1 {
+        font-size: 20px;
+    }
+    .customize .customize_header_container h2 {
+        font-size: 34px;
+    }
+    .customize .customize_header_container p {
+        font-size: 14px;
+        line-height: 1.8em;
+        max-width: 430px;
+    }
+    .customize .customize_cards_container #center .square_border_wrapper {
+        flex-direction: column;
+    }
+    .customize .customize_cards_container #left,
+    .customize .customize_cards_container #center,
+    .customize .customize_cards_container #right {
+        padding-bottom: 20px;
+    }
+    .customize .square_info_container .square_border_wrapper {
+        flex-direction: column;
+    }
+    .customize .square_info_container img {
+        width: 100%;
+    }
+
+
+    .themes .themes_wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .themes .themes_wrapper .themes_header_container {
+        width: auto;
+        padding: 0 15px;
+        padding-bottom: 80px;
+    }
+    .themes .themes_wrapper .themes_header_container h1 {
+        font-size: 36px;
+        padding-bottom: 20px;
+    }
+    .themes .themes_wrapper .themes_header_container p {
+        font-size: 14px;
+    }
+    .themes .themes_wrapper .themes_banner_container h1 {
+        font-size: 15px;
+    
+        padding-left: 6vw;
+        padding-bottom: 15px;
+    }
+
+
+    .community {
+        padding: 0 15px;
+    }
+    .community_wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .community .container .discord_wrapper,
+    .community .container .guide_wrapper {
+        padding: 30px 15px;
+    }
+    .community .container .discordc {
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+    .community .container .text_container {
+        padding-left: 20px;
+    }
+
+
     .social {
         width: auto;
         margin-top: 30px;
