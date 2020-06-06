@@ -529,6 +529,7 @@
         padding-bottom: 20px;
     }
     .footer .logo_wrapper figure {
+        background-position: center;
         margin-left: auto;
         margin-right: auto;
         width: 100%;

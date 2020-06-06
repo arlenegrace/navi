@@ -1,5 +1,11 @@
 /* KEYFRAME ANIMATIONS GO HERE */
 
+/* BLANK ANIMATION USED TO DELAY OTHER ANIMATIONS */
+@keyframes blank {
+    from { }
+    to   { }
+}
+
 @keyframes fadein_txt {
     from { opacity: 0; }
     33%  { opacity: 0; }

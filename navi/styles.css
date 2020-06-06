@@ -511,7 +511,7 @@
 }
 .footer .logo_wrapper figure {
     background-image: url("images/logo_light.png");
-    background-position: center;
+    background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
