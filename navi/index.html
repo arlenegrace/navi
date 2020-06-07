@@ -27,7 +27,7 @@
         <meta name="msapplication-TileColor" content="#b9d9eb">
         <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
         <meta name="theme-color" content="#b9d9eb">
-        
+
         <!-- METADATA FOR EMBEDS AND PREVIEWS -->
         <meta name="description" content="The fast and modern all-in-one hypebeast tool.">
         <meta name="keywords" content="Navi Bot, hyepbeast, fashion">
@@ -38,13 +38,27 @@
         <meta property="og:description" content="Quickly and easily shop for limited streetwear and clothing without having to worry about stock.">
         <meta property="og:image" content="images/logo.png">
         <meta property="og:url" content="https://www.infinitylabs.dev/navi_rc1/">
-        
+
         <title>Navi Bot</title>
     </head>
 
     <body>
+        <header class="sidenav" id="sidenav" style="width: 0vw;">
+            <div class="sidenav_bg" id="sidenav_bg" onclick="open_nav()"></div>
+
+            <nav class="sidenav_container" id="sidenav_container_id" style="width: 0vw;">
+                <div class="sidenav_links">
+                    <a href="https://www.infinitylabs.dev/">Features</a>
+                    <a href="https://www.infinitylabs.dev/gallery/">Gallery</a>
+                    <a href="https://www.infinitylabs.dev/about/">Community</a>
+                    <a href="https://www.infinitylabs.dev/portfolio/">Contact</a>
+                </div>
+            </nav>
+        </header>
+
         <header class="nav_bar">
             <img src="images/logo_light_blue.png">
+
             <div class="right_header">
                 <nav>
                     <div>
@@ -60,6 +74,11 @@
                         <a href="https://www.infinitylabs.dev/portfolio/">Contact</a>
                     </div>
                 </nav>
+            </div>
+
+            <div class="hamburger" id="hamburger" onclick="open_nav()">
+                <div class="bar1"></div>
+                <div class="bar3"></div>
             </div>
         </header>
 
@@ -192,16 +211,15 @@
                             interface.
                         </p>
                     </div>
-    
+
                     <div class="themes_banner_container">
                         <div class="square_border_wrapper">
                             <h1 id="themes_title">— Olivia</h1>
                             <img id="themes_banner" src="images/themes/olivia.jpg">
                         </div>
                     </div>
-    
+
                     <div class="theme_row">
-    
                         <div class="theme_card" id="theme_card_left">
                             <img src="images/olivia.png" onmouseover="theme_banner_olivia()">
                         </div>
@@ -217,9 +235,31 @@
                         <div class="theme_card" id="theme_card_right">
                             <img src="images/nautilus.png" onmouseover="theme_banner_nautilus()">
                         </div>
-    
                     </div>
-    
+
+                    <div class="mobile_theme_column">
+                        <div class="theme_mobile_card" id="theme_card_top">
+                            <h1 id="mobile_card_olivia">— OLIVIA</h1>
+                            <img src="images/themes/olivia.jpg">
+                        </div>
+                        <div class="theme_mobile_card">
+                            <h1 id="mobile_card_mizu">— MIZU</h1>
+                            <img src="images/themes/mizu.jpg">
+                        </div>
+                        <div class="theme_mobile_card">
+                            <h1 id="mobile_card_light">— LIGHT</h1>
+                            <img src="images/themes/light.jpg">
+                        </div>
+                        <div class="theme_mobile_card">
+                            <h1 id="mobile_card_alter">— ALTER</h1>
+                            <img src="images/themes/alter.jpg">
+                        </div>
+                        <div class="theme_mobile_card" id="theme_card_bottom">
+                            <h1 id="mobile_card_nautilus">— NAUTILUS</h1>
+                            <img src="images/themes/nautilus.jpg">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

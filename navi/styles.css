@@ -1,3 +1,56 @@
+/* DEFAULT CSS */
+.sidenav {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sidenav .sidenav_bg {
+    width: 0vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.sidenav_container {
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    overflow-y: hidden;
+    transition: width 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.sidenav_links {
+    width: 100%;
+    margin-top: 120px;
+}
+.sidenav_links a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    text-align: right;
+    text-decoration: none;
+
+    transition: 0.3s;
+    background-color: inherit;
+    padding: 14px 28px;
+    cursor: pointer;
+    display: block;
+}
+
+
 .nav_bar {
     padding: 30px 50px;
     padding-top: 50px;
@@ -8,16 +61,13 @@
     width: auto;
     max-width: 1300px;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     align-items: center;
+
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-
-    z-index: 2;
 }
 .nav_bar img {
     height: 25px;
@@ -27,8 +77,6 @@
 }
 .right_header {
     text-align: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
 
     margin-left: auto;
@@ -45,6 +93,27 @@
     letter-spacing: .06em;
     text-decoration: none;
     transition-duration: 0.3s;
+}
+.nav_bar .hamburger {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+}
+/*ANIMATED HAMBURGER*/
+.bar1, .bar3 {
+    width: 25px;
+    height: 3px;
+    margin: 8px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+    transform: rotate(-45deg) translate(-5.5px, 4px);
+}
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-4px, -3px);
+    transform: rotate(45deg) translate(-3.5px, -2.5px);
 }
 
 
@@ -75,6 +144,7 @@
     margin: 0 auto;
     padding-top: 220px;
     padding-bottom: 200px;
+    z-index: 0;
 }
 .landing_title {
     max-width: 800px;
@@ -364,6 +434,9 @@
 .themes .themes_banner_container {
     padding-bottom: 20px;
 }
+.themes .mobile_theme_column {
+    display: none;
+}
 .themes .themes_wrapper .themes_banner_container img {
     width: 100%;
     margin-left: auto;
@@ -384,6 +457,7 @@
     padding-left: 60px;
     padding-bottom: 20px;
 }
+
 
 .lifestyle,
 .automate {

@@ -302,7 +302,7 @@
 
     .landing {
         padding: 0 7vw;
-        height: 751px;
+        height: 850px;
     }
     .landing .landing_title .available {
         display: none;
@@ -350,9 +350,17 @@
     }
     @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
         .landing .landing_title {
-            -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(9px);
+            backdrop-filter: blur(9px);
             background-color: rgba(255, 255, 255, 0.5);
+            background-image: linear-gradient(
+                to top,
+                rgba(255, 255, 255, 0.3),
+                rgba(255, 255, 255, 0.205),
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0),
+                rgba(0, 0, 0, 0)
+            );
         }
        .landing .bg_wrapper figure {
         background-image: url("images/ultraboost_white_mobile.jpg");
@@ -407,6 +415,12 @@
     .customize .square_info_container h1 {
         margin: 0 auto;
     }
+    .customize .customize_header_container h2 {
+        padding-bottom: 20px;
+    }
+    .customize .customize_header_container p {
+        line-height: 1.8em;
+    }
 
 
     .themes {
@@ -445,7 +459,7 @@
 
     .landing {
         padding: 0 30px;
-        height: 700px;
+        height: 750px;
     }
     .landing .landing_title {
         padding: 40px 40px;
@@ -525,15 +539,14 @@
         margin: 0 auto;
     }
     .social {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 15px 0px;
     }
     .footer .logo_wrapper figure {
         background-position: center;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        height: 18px;
+        height: 15px;
     }
     .footer .logo_wrapper h1 {
         font-size: 17px;
@@ -548,16 +561,26 @@
     .twitter,
     .discord,
     .github {
-        margin-left: 15px;
-        margin-right: 15px;
-        width: 27px;
-        height: 27px;
+        margin-left: 12px;
+        margin-right: 12px;
+        width: 24px;
+        height: 24px;
     }
 }
 
 @media screen and (max-width: 650px) {
     .nav_bar {
         padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .nav_bar .hamburger {
+        display: block;
+        cursor: pointer;
+        right: 0;
+    }
+    .nav_bar img {
+        margin-right: auto;
     }
     .right_header {
         display: none;
@@ -569,6 +592,11 @@
         font-size: 14px;
     }
 
+
+    .landing {
+        height: 680px;
+    }
+
     .footer {
         width: auto;
         padding: 20px 15px;
@@ -578,8 +606,23 @@
 @media screen and (max-width: 600px) {
     .landing {
         padding: 0 15px;
-        height: 700px;
+        height: 650px;
     }
+    .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_phone.jpg");
+        background-position: center top;
+    }
+    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
+        .landing .landing_title {
+            -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+            background-color: rgba(255, 255, 255, 0.5);
+            background-image: none;
+        }
+       .landing .bg_wrapper figure {
+        background-image: url("images/ultraboost_white_phone_nogradient.jpg");
+       }
+   }
     .landing .landing_title {
         padding: 40px 15px;
     }
@@ -631,6 +674,7 @@
     }
     .customize .customize_header_container h2 {
         font-size: 34px;
+        padding-bottom: 10px;
     }
     .customize .customize_header_container p {
         font-size: 14px;
@@ -641,9 +685,11 @@
         flex-direction: column;
     }
     .customize .customize_cards_container #left,
-    .customize .customize_cards_container #center,
+    .customize .customize_cards_container #center {
+        padding-bottom: 40px;
+    }
     .customize .customize_cards_container #right {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
     .customize .square_info_container .square_border_wrapper {
         flex-direction: column;
@@ -669,11 +715,44 @@
     .themes .themes_wrapper .themes_header_container p {
         font-size: 14px;
     }
+    .themes .themes_banner_container {
+        display: none;
+    }
     .themes .themes_wrapper .themes_banner_container h1 {
         font-size: 15px;
     
         padding-left: 6vw;
         padding-bottom: 15px;
+    }
+    .themes .theme_row {
+        display: none;
+    }
+    .themes .mobile_theme_column {
+        display: flex;
+        flex-direction: column;
+    }
+    .themes .theme_mobile_card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .themes .mobile_theme_column #theme_card_bottom {
+        margin-bottom: 0px;
+    }
+    .themes .theme_mobile_card img {
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        margin: auto;
+    }
+    .themes .theme_mobile_card h1 {
+        font-family: 'Open Sans', sans-serif;
+        line-height: 1.05em;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: .06em;
+    
+        padding-left: 6vw;
+        padding-bottom: 10px;
     }
 
 
@@ -723,5 +802,16 @@
     .github {
         margin-left: 10px;
         margin-right: 10px;
+    }
+}
+
+
+/* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        overflow-y: auto;
+    }
+    .sidenav a {
+        font-size: 20px
     }
 }

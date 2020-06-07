@@ -1,6 +1,22 @@
-function open_nav(x) {
-    x.classList.toggle("change");
-    document.getElementById('dropdown_menu_id').style.height = dropdown.style.height == '100%' ? '0%' : '100%';
+function open_nav() {
+    let sidenav = document.getElementById('sidenav');
+    let dropdown = document.getElementById('sidenav_container_id');
+    let bg = document.getElementById('sidenav_bg');
+    const opened = dropdown.style.width == '70vw' ? true : false;
+
+    document.getElementById('hamburger').classList.toggle("change");
+
+    if (opened) {
+        bg.style.width = '0vw';
+        bg.style.opacity = '0';
+        dropdown.style.width = '0vw';
+        sidenav.style.width = '0vw';
+    } else {
+        dropdown.style.width = '70vw';
+        bg.style.width = '100vw';
+        bg.style.opacity = '1';
+        sidenav.style.width = '100vw';
+    }
 }
 
 function theme_banner_light() {

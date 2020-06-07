@@ -2,6 +2,26 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
+.sidenav .sidenav_bg {
+    background-color: rgba(46, 46, 46, 0);
+}
+.sidenav_container {
+    background-color: rgb(248, 251, 255);
+}
+.sidenav_links a {
+    color: rgb(135, 148, 165);
+}
+.sidenav_links a:hover,
+.sidenav_container a:focus {
+    color: #424242;
+    transition-duration: 0.5s;
+}
+.bar1,
+.bar2,
+.bar3 {
+    background-color: rgb(135, 148, 165);
+}
+
 
 .right_header a {
     color: rgb(192, 198, 207);
@@ -104,6 +124,21 @@ body {
 }
 .themes .themes_wrapper .themes_banner_container h1 {
     color: #e8c4b8;
+}
+.themes .theme_mobile_card #mobile_card_olivia {
+    color: #e8c4b8;
+}
+.themes .theme_mobile_card #mobile_card_mizu {
+    color: #b9d9eb;
+}
+.themes .theme_mobile_card #mobile_card_light {
+    color: #c0c6cf;
+}
+.themes .theme_mobile_card #mobile_card_alter {
+    color: #d72f1f;
+}
+.themes .theme_mobile_card #mobile_card_nautilus {
+    color: #eac004;
 }
 .themes .themes_banner_container img {
     box-shadow: 0px 10px 42px rgba(0, 0, 0, 0.6);
