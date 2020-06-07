@@ -48,7 +48,7 @@
         padding: 5px 6px;
     }
     .landing #download {
-        font-size: 17px;
+        font-size: 16px;
     }
     .landing .landing_title h1 {
         font-size: 68px;
@@ -65,7 +65,7 @@
         margin-right: 110px;
     }
     .landing .blur_region .overview .highlight_container h3 {
-        font-size: 16px;
+        font-size: 15px;
         margin-bottom: 14px;
     }
     .landing .blur_region .overview .highlight_container p {
@@ -100,7 +100,7 @@
     }
     .lifestyle .text_container h1,
     .automate .text_container h1 {
-        font-size: 40px;
+        font-size: 38px;
         letter-spacing: .05em;
     }
     .lifestyle .text_container p,
@@ -151,17 +151,17 @@
         padding-top: 120px;
     }
     .themes .themes_wrapper .themes_header_container {
-        width: 500px;
+        width: 550px;
     }
     .themes .themes_wrapper .themes_header_container h1 {
         font-size: 44px;
         padding-bottom: 20px;
     }
     .themes .themes_wrapper .themes_header_container p {
-        font-size: 16px;
+        font-size: 18px;
     }
     .themes .themes_wrapper .themes_banner_container h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -203,20 +203,13 @@
     .nav_bar img {
         height: 18px;
     }
-    .right_header a {
-        font-size: 14px;
-    }
 
 
     .landing {
         padding: 0 30px;
     }
-    .landing .landing_title a {
-        font-size: 9px;
-        padding: 4px 6px;
-    }
     .landing #download {
-        font-size: 15px;
+        font-size: 14px;
     }
     .landing .landing_title h1 {
         font-size: 58px;
@@ -235,7 +228,7 @@
         padding: 60px 0;
     }
     .landing .blur_region .overview .highlight_container h3 {
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 14px;
     }
     .landing .blur_region .overview .highlight_container p {
@@ -273,7 +266,7 @@
     }
     .lifestyle .text_container h1,
     .automate .text_container h1 {
-        font-size: 36px;
+        font-size: 34px;
     }
     .lifestyle .text_container p,
     .automate .text_container p {
@@ -337,6 +330,9 @@
     .nav_bar {
         padding: 50px 7vw;
     }
+    .right_header div {
+        margin-left: 40px;
+    }
 
 
     .landing {
@@ -349,8 +345,16 @@
     .landing .landing_title .available_mobile {
         display: inline-block;
     }
+    .landing a,
+    .landing .landing_title a {
+        font-weight: 700;
+    }
     .landing .landing_title .available_mobile a {
         font-size: 15px;
+    }
+    .landing #download {
+        font-size: 15px;
+        padding: 0px;
     }
     .landing_container {
         padding-top: 0px;
@@ -370,8 +374,8 @@
     }
     .landing .landing_title a {
         font-size: 10px;
-        padding: 4px 8px;
-        background-color: rgb(234, 237, 241);
+        padding: 5px 8px;
+        background-color: rgb(238, 241, 245);
         margin-right: 20px;
     }
     .landing .landing_title h1 {
@@ -382,7 +386,7 @@
 
         max-width: 500px;
         margin-bottom: 30px;
-        color: rgb(187, 192, 200);
+        color: rgb(203, 210, 219);
     }
     .landing .blur_region {
         display: none;
@@ -496,9 +500,33 @@
     }
 }
 
+@media screen and (max-width: 800px) {
+    .nav_bar {
+        padding-top: 20px;
+    }
+    .nav_bar .hamburger {
+        display: block;
+        cursor: pointer;
+        right: 0;
+    }
+    .nav_bar img {
+        margin-right: auto;
+    }
+    .right_header {
+        display: none;
+    }
+    .right_header div {
+        margin-left: 15px;
+    }
+    .right_header a {
+        font-size: 14px;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .nav_bar {
         padding: 50px 40px;
+        padding-top: 20px;
     }
 
 
@@ -624,23 +652,6 @@
         padding-left: 15px;
         padding-right: 15px;
     }
-    .nav_bar .hamburger {
-        display: block;
-        cursor: pointer;
-        right: 0;
-    }
-    .nav_bar img {
-        margin-right: auto;
-    }
-    .right_header {
-        display: none;
-    }
-    .right_header div {
-        margin-left: 15px;
-    }
-    .right_header a {
-        font-size: 14px;
-    }
 
 
     .landing {
@@ -720,7 +731,7 @@
         padding-bottom: 60px;
     }
     .customize .customize_header_container h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .customize .customize_header_container h2 {
         font-size: 34px;

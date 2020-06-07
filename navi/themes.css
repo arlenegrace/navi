@@ -41,7 +41,7 @@ body {
     color: rgb(135, 148, 165);
 }
 .landing .landing_title p {
-    color: rgb(173, 177, 185); 
+    color: rgb(186, 194, 203); 
 }
 .landing .landing_container h2 {
     color: rgb(192, 198, 207);
@@ -80,13 +80,13 @@ body {
     background-image: url("images/lifestyle.jpg");
 }
 #lifestyle .lifestyle_gradient_wrapper {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
 }
 #lifestyle .text_container h1 {
     color: rgb(236, 236, 236);
 }
 #lifestyle .text_container p {
-    color: rgb(218, 218, 218);
+    color: rgb(200, 200, 200);
 }
 
 
@@ -124,7 +124,7 @@ body {
     color: rgb(236, 236, 236);
 }
 .themes .themes_wrapper .themes_header_container p {
-    color: rgb(182, 182, 182);
+    color: rgb(190, 190, 190);
 }
 .themes .themes_wrapper .themes_banner_container h1 {
     color: #e8c4b8;
@@ -156,7 +156,7 @@ body {
     background-image: url("images/ultraboost.jpg");
 }
 #automate .automate_gradient_wrapper {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 #automate .text_container h1 {
     color: rgb(218, 218, 218);

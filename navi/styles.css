@@ -37,8 +37,8 @@
     margin-top: 120px;
 }
 .sidenav_links a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 28px;
     text-align: right;
     text-decoration: none;
@@ -81,16 +81,17 @@
 
     margin-left: auto;
     margin-right: 0;
+    z-index: 1;
 }
 .right_header div {
     margin-left: 50px;
 }
 .right_header a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 17px;
-    letter-spacing: .06em;
+    letter-spacing: .1em;
     text-decoration: none;
     transition-duration: 0.3s;
 }
@@ -155,7 +156,7 @@
 .landing .landing_title h1,
 .landing .landing_title a,
 .landing .landing_title p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .landing .landing_title .available {
     display: block;
@@ -166,7 +167,7 @@
 }
 .landing a,
 .landing .landing_title a {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 12px;
     letter-spacing: 0.05em;
     text-decoration: none;
@@ -175,7 +176,7 @@
     padding: 6px;
 }
 .landing #download {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px;
 }
 .landing .landing_title h1 {
@@ -204,7 +205,7 @@
     margin: 0 auto;
     padding: 110px 0;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: 0.05em;
 }
 .landing .blur_region .overview h1 {
@@ -223,7 +224,7 @@
 }
 .landing .blur_region .overview .highlight_container h3 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 .landing .blur_region .overview .highlight_container p {
@@ -254,7 +255,7 @@
 }
 .app_preview .app_preview_wrapper h1,
 .app_preview .app_preview_wrapper p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.05em;
 
     margin: 0 100px;
@@ -292,19 +293,19 @@
     padding: 0 70px;
     padding-bottom: 80px;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 18px;
     text-align: left;
 }
 .customize .customize_header_container h1 {
-    font-weight: 400;
-    font-size: 36px;
+    font-weight: 300;
+    font-size: 34px;
     letter-spacing: .06em;
     line-height: 1.05em;
 }
 .customize .customize_header_container h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     letter-spacing: .01em;
     line-height: 1.5em;
@@ -312,7 +313,7 @@
 }
 .customize .customize_header_container p {
     max-width: 700px;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     letter-spacing: .06em;
     line-height: 1.6em;
@@ -350,9 +351,9 @@
     background-size: contain;
 }
 .customize .square_info_container h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.05em;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     letter-spacing: .06em;
     text-align: center;
@@ -378,13 +379,13 @@
 }
 .mockup_render .mockup_wrapper h1,
 .mockup_render .mockup_wrapper p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.05em;
 
     margin: 0 100px;
 }
 .mockup_render .mockup_wrapper h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     letter-spacing: .04em;
 
@@ -392,9 +393,9 @@
     color: rgb(136, 136, 136);
 }
 .mockup_render .mockup_wrapper p {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
-    letter-spacing: .01em;
+    letter-spacing: .02em;
     line-height: 1.7em;
     margin-bottom: 50px;
     color: rgb(236, 236, 236); 
@@ -429,19 +430,19 @@
     margin-right: auto;
     padding-bottom: 100px;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     letter-spacing: .06em;
     text-align: center;
 }
 .themes .themes_wrapper .themes_header_container h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 48px;
     line-height: 1.05em;
     padding-bottom: 30px;
 }
 .themes .themes_wrapper .themes_header_container p {
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 20px;
     line-height: 1.8em;
 }
 .themes .themes_banner_container img {
@@ -491,11 +492,11 @@
     transform: scale(1.0);
 }
 .themes .themes_wrapper .themes_banner_container h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.05em;
-    font-weight: 600;
-    font-size: 20px;
-    letter-spacing: .06em;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: .08em;
 
     padding-left: 60px;
     padding-bottom: 20px;
@@ -522,13 +523,13 @@
     max-width: 1200px;
     margin: 0 auto;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 .lifestyle .text_container h1,
 .automate .text_container h1 {
     line-height: 1.05em;
-    font-weight: 600;
-    font-size: 46px;
+    font-weight: 500;
+    font-size: 42px;
     letter-spacing: .03em;
 
     margin-bottom: 20px;
@@ -536,7 +537,7 @@
 .lifestyle .text_container p,
 .automate .text_container p {
     line-height: 1.9em;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     letter-spacing: .06em;
 
@@ -591,12 +592,11 @@
 .community .container h1,
 .community .container p,
 .community .container a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     letter-spacing: 0.02em;
 }
 .community .container h1 {
-    font-weight: 600;
     font-size: 14px;
 }
 .community .container p {
@@ -606,6 +606,7 @@
     padding-bottom: 30px;
 }
 .community .container a {
+    font-weight: 400;
     cursor: pointer;
     font-size: 13px;
 }
@@ -638,7 +639,7 @@
     margin-bottom: auto;
 }
 .footer .logo_wrapper h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.08em;
@@ -660,8 +661,8 @@
     display: flex;
 }
 .copyright h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     font-size: 14px;
     text-align: right;
     margin-top: auto;
