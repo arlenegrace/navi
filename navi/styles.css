@@ -250,7 +250,7 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 .app_preview .app_preview_wrapper h1,
 .app_preview .app_preview_wrapper p {
@@ -264,7 +264,7 @@
     font-size: 20px;
     letter-spacing: .04em;
 
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .app_preview .app_preview_wrapper p {
     font-weight: 600;
@@ -276,7 +276,6 @@
 
 .customize {
     padding: 150px 50px;
-    padding-bottom: 100px;
 }
 .customize .customize_cards_container {
     display: flex;
@@ -363,9 +362,53 @@
 }
 
 
+.mockup_render {
+    padding: 150px 0px;
+}
+.mockup_render .mockup_wrapper {
+    width: auto;
+    max-width: 1200px;
+    height: 945;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.mockup_render .mockup_wrapper #rectangle {
+    display: none;
+}
+.mockup_render .mockup_wrapper h1,
+.mockup_render .mockup_wrapper p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.05em;
+
+    margin: 0 100px;
+}
+.mockup_render .mockup_wrapper h1 {
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: .04em;
+
+    margin-bottom: 30px;
+    color: rgb(136, 136, 136);
+}
+.mockup_render .mockup_wrapper p {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: .01em;
+    line-height: 1.7em;
+    margin-bottom: 50px;
+    color: rgb(236, 236, 236); 
+}
+.mockup_render .mockup_wrapper img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.6);
+}
+
+
 .themes {
     padding: 150px 0px;
-    padding-top: 100px;
     padding-bottom: 0px;
 }
 .themes .themes_bg_wrapper {
@@ -451,7 +494,7 @@
     font-family: 'Open Sans', sans-serif;
     line-height: 1.05em;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: .06em;
 
     padding-left: 60px;

@@ -109,6 +109,10 @@ body {
     color: rgb(190, 190, 190);
 }
 
+.mockup_render {
+    background-color: rgb(39, 39, 39);
+}
+
 
 .themes {
     background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(42, 42, 42));

@@ -88,7 +88,7 @@
         margin-bottom: 20px;
     }
     .app_preview .app_preview_wrapper p {
-        font-size: 24px;
+        font-size: 26px;
         letter-spacing: .01em;
         line-height: 1.6em;
     }
@@ -125,6 +125,25 @@
     .customize .customize_header_container p {
         font-size: 18px;
         max-width: 550px;
+    }
+
+
+    .mockup_render .mockup_wrapper h1,
+    .mockup_render .mockup_wrapper p {
+        margin: 0 7vw;
+        margin-bottom: 50px;
+    }
+    .mockup_render .mockup_wrapper h1 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .mockup_render .mockup_wrapper p {
+        font-size: 26px;
+        letter-spacing: .01em;
+        line-height: 1.6em;
+    }
+    .mockup_render .mockup_wrapper img {
+        box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.3);
     }
 
 
@@ -240,7 +259,7 @@
         font-size: 14px;
     }
     .app_preview .app_preview_wrapper p {
-        font-size: 22px;
+        font-size: 24px;
     }
 
 
@@ -274,6 +293,26 @@
     .customize .customize_header_container p {
         font-size: 16px;
         max-width: 480px;
+    }
+
+
+    .mockup_render {
+        padding: 120px 0px;
+    }
+    .mockup_render .mockup_wrapper h1 {
+        font-size: 14px;
+    }
+    .mockup_render .mockup_wrapper p {
+        font-size: 24px;
+    }
+    .mockup_render .mockup_wrapper img {
+        box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.3);
+    }
+
+
+    .themes {
+        padding: 120px 0px;
+        padding-bottom: 0px;
     }
 
 
@@ -375,7 +414,7 @@
         font-size: 14px;
     }
     .app_preview .app_preview_wrapper p {
-        font-size: 20px;
+        font-size: 22px;
         letter-spacing: .01em;
         line-height: 1.6em;
     }
@@ -400,6 +439,9 @@
         padding: 0;
         padding-bottom: 40px;
     }
+    .customize .customize_cards_container #right {
+        padding-bottom: 0px;
+    }
     .customize .square_info_container .square_border_wrapper {
         display: flex;
     }
@@ -423,8 +465,11 @@
     }
 
 
-    .themes {
-        padding-top: 0px;
+    .mockup_render .mockup_wrapper p {
+        font-size: 22px;
+    }
+    .mockup_render .mockup_wrapper img {
+        box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.3);
     }
 
 
@@ -493,6 +538,11 @@
 
     .customize {
         padding: 120px 40px;
+    }
+
+
+    .mockup_render {
+        padding: 100px 0px;
     }
 
 
@@ -696,6 +746,11 @@
     }
     .customize .square_info_container img {
         width: 100%;
+    }
+
+
+    .mockup_render {
+        padding: 80px 0vw;
     }
 
 
