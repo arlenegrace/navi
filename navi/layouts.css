@@ -383,10 +383,9 @@
     }
     .landing .landing_title p {
         font-size: 15px;
-
         max-width: 500px;
         margin-bottom: 30px;
-        color: rgb(203, 210, 219);
+        color: rgb(192, 199, 209);
     }
     .landing .blur_region {
         display: none;
