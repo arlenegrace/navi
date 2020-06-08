@@ -319,7 +319,7 @@ main {
 }
 .customize .customize_header_container p {
     max-width: 700px;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     letter-spacing: .06em;
     line-height: 1.6em;
@@ -447,7 +447,7 @@ main {
     padding-bottom: 30px;
 }
 .themes .themes_wrapper .themes_header_container p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 20px;
     line-height: 1.8em;
 }
@@ -543,7 +543,7 @@ main {
 .lifestyle .text_container p,
 .automate .text_container p {
     line-height: 1.9em;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 18px;
     letter-spacing: .06em;
 
