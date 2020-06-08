@@ -57,7 +57,7 @@
         </header>
 
         <header class="nav_bar">
-            <img src="images/logo_light_blue.png">
+            <img id="header_logo" src="images/logo_light_blue.png">
 
             <div class="right_header">
                 <nav>
@@ -77,255 +77,258 @@
             </div>
 
             <div class="hamburger" id="hamburger" onclick="open_nav()">
-                <div class="bar1"></div>
-                <div class="bar3"></div>
+                <div class="bar1" id="bar1" style="background-color: rgb(135, 148, 165);"></div>
+                <div class="bar3" id="bar3" style="background-color: rgb(135, 148, 165);"></div>
             </div>
         </header>
 
-        <section class="landing">
-            <div class="landing_container">
-                <div class="landing_title">
-                    <div class="available">
-                        <a>AVAILABLE 2021</a>
-                    </div>
-
-                    <h1>
-                        Navi Bot
-                    </h1>
-                    <p>
-                        A fast, lightweight and modern application to manage your streetwear hobby.
-                        Get updates on new releases, read articles from all your favorite
-                        news sources, and get a visual overview of
-                        your collection, all within one app.
-                    </p>
-                    <div class="available_mobile">
-                        <a>Available 2021</a>
-                    </div>
-                    <a href="https://github.com/arlenegrace/navi" id="download">Download</a>
-                </div>
-            </div>
-
-            <div class="blur_region">
-                <div class="overview">
-                    <!-- <h1>— Overview</h1> -->
-                    <div class="highlight_flexbox_container">
-                        <div class="highlight_container" id="fast">
-                            <h3>Fast</h3>
-                            <p>Lightweight and modern.</p>
+        <main style="opacity: 1">
+            <section class="landing">
+                <div class="landing_container">
+                    <div class="landing_title">
+                        <div class="available">
+                            <a>AVAILABLE 2021</a>
                         </div>
-                        <div class="highlight_container" id="custom">
-                            <h3>Customizable</h3>
-                            <p>Lightweight and modern.</p>
-                        </div>
-                        <div class="highlight_container" id="auto">
-                            <h3>Automatic</h3>
-                            <p>Lightweight and modern.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg_wrapper">
-                <figure class="landing_background"></figure>
-            </div>
-        </section>
-
-        <section class="app_preview">
-            <div class="app_preview_wrapper">
-                <img src="images/olivia_shadow.png" id="rounded">
-                <img src="images/olivia_shadow_rectangle.png" id="rectangle">
-
-                <h1>
-                    — OVERVIEW
-                </h1>
-                <p>
-                    A fast, lightweight and modern application to monitor and provide
-                    updates on new sneaker and clothing releases.
-                </p>
-            </div>
-        </section>
-
-        <section class="lifestyle" id="lifestyle">
-            <div class="lifestyle_gradient_wrapper">
-                <div class="lifestyle_wrapper">
-                    <div class="text_container">
-                        <h1>Lifestyle</h1>
+    
+                        <h1>
+                            Navi Bot
+                        </h1>
                         <p>
-                            Quickly and easily shop for streetwear and clothing without having to worry about stock.
-                            Quickly and easily shop for limited streetwear and clothing without having to worry about stock.
+                            A fast, lightweight and modern application to manage your streetwear hobby.
+                            Get updates on new releases, read articles from all your favorite
+                            news sources, and get a visual overview of
+                            your collection, all within one app.
                         </p>
+                        <div class="available_mobile">
+                            <a>Available 2021</a>
+                        </div>
+                        <a href="https://github.com/arlenegrace/navi" id="download">Download</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="customize">
-            <div class="customize_header_container">
-                <h1>
-                    Customizable
-                </h1>
-                <h2>
-                    Make Navi yours
-                </h2>
-                <p>
-                    From creating your own custom themes to configuring your home page with the most relevant
-                    widgets, Navi lets you take control to suit your needs and preferences.
-                </p>
-            </div>
-
-            <div class="customize_cards_container">
-
-                <div class="square_info_container" id="left">
-                    <div class="square_border_wrapper">
-                        <img src="images/themes.jpg">
-                        <h1>Themes</h1>
+    
+                <div class="blur_region">
+                    <div class="overview">
+                        <!-- <h1>— Overview</h1> -->
+                        <div class="highlight_flexbox_container">
+                            <div class="highlight_container" id="fast">
+                                <h3>Fast</h3>
+                                <p>Lightweight and modern.</p>
+                            </div>
+                            <div class="highlight_container" id="custom">
+                                <h3>Customizable</h3>
+                                <p>Lightweight and modern.</p>
+                            </div>
+                            <div class="highlight_container" id="auto">
+                                <h3>Automatic</h3>
+                                <p>Lightweight and modern.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="square_info_container" id="center">
-                    <div class="square_border_wrapper">
-                        <img src="images/portfolio.jpg">
-                        <h1>Portfolio</h1>
-                    </div>
+    
+                <div class="bg_wrapper">
+                    <figure class="landing_background"></figure>
                 </div>
-                <div class="square_info_container" id="right">
-                    <div class="square_border_wrapper">
-                        <img src="images/feed.jpg">
-                        <h1>Feed</h1>
-                    </div>
-                </div>
+            </section>
 
-            </div>
-        </section>
-
-        <section class="mockup_render">
-            <div class="mockup_wrapper">
-                <div class="render_header_container">
-                    <h1>— OVERVIEW</h1>
+            <section class="app_preview">
+                <div class="app_preview_wrapper">
+                    <img src="images/olivia_shadow.png" id="rounded">
+                    <img src="images/olivia_shadow_rectangle.png" id="rectangle">
+    
+                    <h1>
+                        — OVERVIEW
+                    </h1>
                     <p>
                         A fast, lightweight and modern application to monitor and provide
                         updates on new sneaker and clothing releases.
                     </p>
                 </div>
+            </section>
 
-                <img src="images/pro_display_render.jpg">
-            </div>
-        </section>
-
-        <section class="themes">
-            <div class="themes_bg_wrapper">
-                <div class="themes_wrapper">
-                    <div class="themes_header_container">
-                        <!-- <img src="images/icon-vsc.png"> -->
-                        <h1>
-                            Themes
-                        </h1>
-                        <p>
-                            A beautiful interface makes an application more inviting to use. That's why
-                            Navi comes with five beautifully designed themes to compliment its modern
-                            interface.
-                        </p>
+            <section class="lifestyle" id="lifestyle">
+                <div class="lifestyle_gradient_wrapper">
+                    <div class="lifestyle_wrapper">
+                        <div class="text_container">
+                            <h1>Lifestyle</h1>
+                            <p>
+                                Quickly and easily shop for streetwear and clothing without having to worry about stock.
+                                Quickly and easily shop for limited streetwear and clothing without having to worry about stock.
+                            </p>
+                        </div>
                     </div>
+                </div>
+            </section>
 
-                    <div class="themes_banner_container">
+            <section class="customize">
+                <div class="customize_header_container">
+                    <h1>
+                        Customizable
+                    </h1>
+                    <h2>
+                        Make Navi yours
+                    </h2>
+                    <p>
+                        From creating your own custom themes to configuring your home page with the most relevant
+                        widgets, Navi lets you take control to suit your needs and preferences.
+                    </p>
+                </div>
+    
+                <div class="customize_cards_container">
+    
+                    <div class="square_info_container" id="left">
                         <div class="square_border_wrapper">
-                            <h1 id="themes_title">— OLIVIA</h1>
-                            <img id="themes_banner" src="images/themes/olivia.jpg">
+                            <img src="images/themes.jpg">
+                            <h1>Themes</h1>
                         </div>
                     </div>
-
-                    <div class="theme_row">
-                        <div class="theme_card" id="theme_card_left">
-                            <img src="images/olivia.png" onmouseover="theme_banner_olivia()">
-                        </div>
-                        <div class="theme_card">
-                            <img src="images/mizu.png" onmouseover="theme_banner_mizu()">
-                        </div>
-                        <div class="theme_card">
-                            <img src="images/light.png" onmouseover="theme_banner_light()">
-                        </div>
-                        <div class="theme_card">
-                            <img src="images/alter.png" onmouseover="theme_banner_alter()">
-                        </div>
-                        <div class="theme_card" id="theme_card_right">
-                            <img src="images/nautilus.png" onmouseover="theme_banner_nautilus()">
+                    <div class="square_info_container" id="center">
+                        <div class="square_border_wrapper">
+                            <img src="images/portfolio.jpg">
+                            <h1>Portfolio</h1>
                         </div>
                     </div>
-
-                    <div class="mobile_theme_column">
-                        <div class="theme_mobile_card" id="theme_card_top">
-                            <h1 id="mobile_card_olivia">— OLIVIA</h1>
-                            <img src="images/themes/olivia.jpg">
-                        </div>
-                        <div class="theme_mobile_card">
-                            <h1 id="mobile_card_mizu">— MIZU</h1>
-                            <img src="images/themes/mizu.jpg">
-                        </div>
-                        <div class="theme_mobile_card">
-                            <h1 id="mobile_card_light">— LIGHT</h1>
-                            <img src="images/themes/light.jpg">
-                        </div>
-                        <div class="theme_mobile_card">
-                            <h1 id="mobile_card_alter">— ALTER</h1>
-                            <img src="images/themes/alter.jpg">
-                        </div>
-                        <div class="theme_mobile_card" id="theme_card_bottom">
-                            <h1 id="mobile_card_nautilus">— NAUTILUS</h1>
-                            <img src="images/themes/nautilus.jpg">
+                    <div class="square_info_container" id="right">
+                        <div class="square_border_wrapper">
+                            <img src="images/feed.jpg">
+                            <h1>Feed</h1>
                         </div>
                     </div>
-
+    
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="automate" id="automate">
-            <div class="automate_gradient_wrapper">
-                <div class="automate_wrapper">
-                    <div class="text_container">
-                        <h1>Automate</h1>
+            <section class="mockup_render">
+                <div class="mockup_wrapper">
+                    <div class="render_header_container">
+                        <h1>— OVERVIEW</h1>
                         <p>
-                            Quickly and easily shop for streetwear and clothing without having to worry about stock.
-                            Quickly and easily shop for limited streetwear and clothing without having to worry about stock.
+                            A fast, lightweight and modern application to monitor and provide
+                            updates on new sneaker and clothing releases.
                         </p>
                     </div>
+    
+                    <img src="images/pro_display_render.jpg">
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="community" id="joinus">
-            <div class="community_wrapper">
-                <div class="container">
-                    <div class="discordc">
-                        <div id="community_discord" class="discord_wrapper">
-                            <img src="images/discord_50.png">
-                            <div class="text_container">
-                                <h1>Join the community</h1>
-                                <p>
-                                    To stay up to date on updates, new features, and events;
-                                    report bugs, or chat with other users, join our Discord
-                                    server!
-                                </p>
-                                <a>Join the Navi Bot Discord server</a>
+            <section class="themes">
+                <div class="themes_bg_wrapper">
+                    <div class="themes_wrapper">
+                        <div class="themes_header_container">
+                            <!-- <img src="images/icon-vsc.png"> -->
+                            <h1>
+                                Themes
+                            </h1>
+                            <p>
+                                A beautiful interface makes an application more inviting to use. That's why
+                                Navi comes with five beautifully designed themes to compliment its modern
+                                interface.
+                            </p>
+                        </div>
+    
+                        <div class="themes_banner_container">
+                            <div class="square_border_wrapper">
+                                <h1 id="themes_title">— OLIVIA</h1>
+                                <img id="themes_banner" src="images/themes/olivia.jpg">
                             </div>
                         </div>
+    
+                        <div class="theme_row">
+                            <div class="theme_card" id="theme_card_left">
+                                <img src="images/olivia.png" onmouseover="theme_banner_olivia()">
+                            </div>
+                            <div class="theme_card">
+                                <img src="images/mizu.png" onmouseover="theme_banner_mizu()">
+                            </div>
+                            <div class="theme_card">
+                                <img src="images/light.png" onmouseover="theme_banner_light()">
+                            </div>
+                            <div class="theme_card">
+                                <img src="images/alter.png" onmouseover="theme_banner_alter()">
+                            </div>
+                            <div class="theme_card" id="theme_card_right">
+                                <img src="images/nautilus.png" onmouseover="theme_banner_nautilus()">
+                            </div>
+                        </div>
+    
+                        <div class="mobile_theme_column">
+                            <div class="theme_mobile_card" id="theme_card_top">
+                                <h1 id="mobile_card_olivia">— OLIVIA</h1>
+                                <img src="images/themes/olivia.jpg">
+                            </div>
+                            <div class="theme_mobile_card">
+                                <h1 id="mobile_card_mizu">— MIZU</h1>
+                                <img src="images/themes/mizu.jpg">
+                            </div>
+                            <div class="theme_mobile_card">
+                                <h1 id="mobile_card_light">— LIGHT</h1>
+                                <img src="images/themes/light.jpg">
+                            </div>
+                            <div class="theme_mobile_card">
+                                <h1 id="mobile_card_alter">— ALTER</h1>
+                                <img src="images/themes/alter.jpg">
+                            </div>
+                            <div class="theme_mobile_card" id="theme_card_bottom">
+                                <h1 id="mobile_card_nautilus">— NAUTILUS</h1>
+                                <img src="images/themes/nautilus.jpg">
+                            </div>
+                        </div>
+    
                     </div>
-                    <div class="guide">
-                        <div id="community_guide" class="guide_wrapper">
-                            <img src="images/tips_50.png">
-                            <div class="text_container">
-                                <h1>Learn more</h1>
-                                <p>
-                                    To stay up to date on updates, new features and events,
-                                    report bugs, or chat with other users, join our Discord
-                                    server!
-                                </p>
-                                <a>View the Navi Bot guide (PDF)</a>
+                </div>
+            </section>
+
+            <section class="automate" id="automate">
+                <div class="automate_gradient_wrapper">
+                    <div class="automate_wrapper">
+                        <div class="text_container">
+                            <h1>Automate</h1>
+                            <p>
+                                Quickly and easily shop for streetwear and clothing without having to worry about stock.
+                                Quickly and easily shop for limited streetwear and clothing without having to worry about stock.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="community" id="joinus">
+                <div class="community_wrapper">
+                    <div class="container">
+                        <div class="discordc">
+                            <div id="community_discord" class="discord_wrapper">
+                                <img src="images/discord_50.png">
+                                <div class="text_container">
+                                    <h1>Join the community</h1>
+                                    <p>
+                                        To stay up to date on updates, new features, and events;
+                                        report bugs, or chat with other users, join our Discord
+                                        server!
+                                    </p>
+                                    <a>Join the Navi Bot Discord server</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide">
+                            <div id="community_guide" class="guide_wrapper">
+                                <img src="images/tips_50.png">
+                                <div class="text_container">
+                                    <h1>Learn more</h1>
+                                    <p>
+                                        To stay up to date on updates, new features and events,
+                                        report bugs, or chat with other users, join our Discord
+                                        server!
+                                    </p>
+                                    <a>View the Navi Bot guide (PDF)</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </main>
 
         <footer class="footer">
             <div class="footer_container">
@@ -341,7 +344,7 @@
                     </div>
                 </div>
                 <div class="copyright">
-                    <h1>github.com/arlenegrace</h1>
+                    <h1>Copyright Infinity Labs</h1>
                 </div>
             </div>
         </footer>

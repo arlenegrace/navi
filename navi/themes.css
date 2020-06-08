@@ -2,18 +2,15 @@ body {
     background-color: rgb(241, 241, 241);
 }
 
-.sidenav .sidenav_bg {
-    background-color: rgba(46, 46, 46, 0);
-}
 .sidenav_container {
-    background-color: rgb(248, 251, 255);
+    background-color: rgb(42, 42, 42);
 }
 .sidenav_links a {
-    color: rgb(135, 148, 165);
+    color: rgb(183, 202, 228);
 }
 .sidenav_links a:hover,
 .sidenav_container a:focus {
-    color: #424242;
+    color: rgb(204, 225, 255);
     transition-duration: 0.5s;
 }
 .bar1,
