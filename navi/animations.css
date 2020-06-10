@@ -1,20 +1,13 @@
 /* KEYFRAME ANIMATIONS GO HERE */
 
 /* BLANK ANIMATION USED TO DELAY OTHER ANIMATIONS */
-@keyframes blank {
-    from { }
-    to   { }
+@keyframes blank_opacity {
+    from { opacity: 0; }
+    to   { opacity: 0; }
 }
 
-@keyframes fadein_txt {
+@keyframes fade_in {
     from { opacity: 0; }
-    33%  { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadein_img {
-    from { opacity: 0; }
-    60%  { opacity: 0; }
     to   { opacity: 1; }
 }
 
@@ -28,6 +21,7 @@
         transform: translateY(0px);
     }
 }
+
 @keyframes slide_up_80 {
     from {
         -webkit-transform: translateY(80px);
@@ -38,6 +32,7 @@
         transform: translateY(0px);
     }
 }
+
 @keyframes slide_up_100 {
     from {
         -webkit-transform: translateY(100px);
@@ -49,10 +44,21 @@
     }
 }
 
+@keyframes slide_up_170 {
+    from {
+        -webkit-transform: translateY(170px);
+        transform: translateY(170px);
+    }
+    to {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
 @keyframes zoom_out {
     from {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
     }
     to {
         -webkit-transform: scale(1);
@@ -60,71 +66,72 @@
     }
 }
 
-@keyframes fadein_creator {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadein_developer {
-    from { opacity: 0; }
-    30%  { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-@keyframes fadein_designer {
-    from { opacity: 0; }
-    50%  { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 
 .landing .bg_wrapper figure {
+    animation-timing-function: cubic-bezier(.28,.35,.37,.99);
     -webkit-animation: zoom_out 1s;
     -moz-animation:    zoom_out 1s;
     -ms-animation:     zoom_out 1s;
     -o-animation:      zoom_out 1s;
-    animation:         zoom_out 1s;
-}
-.landing .landing_title a {
-    -webkit-animation: fadein_designer 2.7s;
-    -moz-animation:    fadein_designer 2.7s;
-    -ms-animation:     fadein_designer 2.7s;
-    -o-animation:      fadein_designer 2.7s;
-    animation:         fadein_designer 2.7s;
-}
-.landing .landing_title h1 {
-    -webkit-animation: fadein_developer 1.7s;
-    -moz-animation:    fadein_developer 1.7s;
-    -ms-animation:     fadein_developer 1.7s;
-    -o-animation:      fadein_developer 1.7s;
-    animation:         fadein_developer 1.7s;
-}
-.landing .landing_title p {
-    -webkit-animation: fadein_designer 2.3s;
-    -moz-animation:    fadein_designer 2.3s;
-    -ms-animation:     fadein_designer 2.3s;
-    -o-animation:      fadein_designer 2.3s;
-    animation:         fadein_designer 2.3s;
-}
-.landing .blur_region .overview h1 {
-    -webkit-animation: fadein_designer 2.3s;
-    -moz-animation:    fadein_designer 2.3s;
-    -ms-animation:     fadein_designer 2.3s;
-    -o-animation:      fadein_designer 2.3s;
-    animation:         fadein_designer 2.3s;
-}
-.landing .blur_region .overview .highlight_container {
-    -webkit-animation: fadein_designer 2.9s;
-    -moz-animation:    fadein_designer 2.9s;
-    -ms-animation:     fadein_designer 2.9s;
-    -o-animation:      fadein_designer 2.9s;
-    animation:         fadein_designer 2.9s;
+    animation:         zoom_out 2s;
 }
 
+.nav_bar .header_logo_wrapper,
+.nav_bar .first,
+.nav_bar .second,
+.nav_bar .third,
+.nav_bar .fourth,
+.landing .landing_title h1,
+.landing .landing_title p,
+.landing .landing_title .download_button {
+    animation-fill-mode: forwards;
+
+    -webkit-animation-name: blank_opacity, fade_in;
+    -moz-animation-name:    blank_opacity, fade_in;
+    -ms-animation-name:     blank_opacity, fade_in;
+    -o-animation-name:      blank_opacity, fade_in;
+    animation-name:         blank_opacity, fade_in;
+}
+.nav_bar .header_logo_wrapper {
+    animation-delay: 0s, .1s;
+    animation-duration: .1s, 1.6s;
+}
+.nav_bar .first {
+    animation-delay: 0s, .2s;
+    animation-duration: .2s, 1.6s;
+}
+.nav_bar .second {
+    animation-delay: 0s, .3s;
+    animation-duration: .3s, 1.6s;
+}
+.nav_bar .third {
+    animation-delay: 0s, .4s;
+    animation-duration: .4s, 1.6s;
+}
+.nav_bar .fourth {
+    animation-delay: 0s, .5s;
+    animation-duration: .5s, 1.6s;
+}
+.landing .landing_title h1 {
+    animation-delay: 0s, .3s;
+    animation-duration: .3s, 1.6s;
+}
+.landing .landing_title p {
+    animation-delay: 0s, .7s;
+    animation-duration: .7s, 1.6s;
+}
+.landing .landing_title .download_button {
+    animation-delay: 0s, .8s;
+    animation-duration: .8s, 1.6s;
+}
+
+
 .app_preview .app_preview_wrapper img {
-    -webkit-animation: slide_up_100 0.8s;
-    -moz-animation:    slide_up_100 0.8s;
-    -ms-animation:     slide_up_100 0.8s;
-    -o-animation:      slide_up_100 0.8s;
-    animation:         slide_up_100 0.8s;
+    animation-timing-function: ease-in-out;
+    
+    -webkit-animation: slide_up_170 0.8s;
+    -moz-animation:    slide_up_170 0.8s;
+    -ms-animation:     slide_up_170 0.8s;
+    -o-animation:      slide_up_170 0.8s;
+    animation:         slide_up_170 0.8s;
 }
