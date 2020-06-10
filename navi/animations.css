@@ -69,11 +69,11 @@
 
 .landing .bg_wrapper figure {
     animation-timing-function: cubic-bezier(.28,.35,.37,.99);
-    -webkit-animation: zoom_out 1s;
-    -moz-animation:    zoom_out 1s;
-    -ms-animation:     zoom_out 1s;
-    -o-animation:      zoom_out 1s;
-    animation:         zoom_out 2s;
+    -webkit-animation: zoom_out 1.7s;
+    -moz-animation:    zoom_out 1.7s;
+    -ms-animation:     zoom_out 1.7s;
+    -o-animation:      zoom_out 1.7s;
+    animation:         zoom_out 1.7s;
 }
 
 .nav_bar .header_logo_wrapper,

@@ -68,9 +68,11 @@
     left: 0;
     right: 0;
 }
+.nav_bar .header_logo_wrapper {
+    z-index: 1;
+}
 .nav_bar img {
     height: 30px;
-    z-index: 1;
     transition: all 0.5s;
     border-radius: 6px;
     object-fit: contain;
@@ -154,7 +156,7 @@ main {
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
-    -webkit-backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 0;
 }
 .landing_title {
@@ -264,7 +266,6 @@ main {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 70px;
     box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.35);
 }
 .app_preview .app_preview_wrapper h1,
@@ -272,7 +273,7 @@ main {
     font-family: 'Inter', sans-serif;
     line-height: 1.05em;
 
-    margin: 0 100px;
+    margin: 0 70px;
 }
 .app_preview .app_preview_wrapper h1 {
     font-weight: 600;
@@ -286,6 +287,7 @@ main {
     font-size: 28px;
     letter-spacing: .01em;
     line-height: 1.7em;
+    margin-bottom: 50px;
 }
 
 
@@ -396,7 +398,7 @@ main {
     font-family: 'Inter', sans-serif;
     line-height: 1.05em;
 
-    margin: 0 100px;
+    margin: 0 70px;
 }
 .mockup_render .mockup_wrapper h1 {
     font-weight: 500;
@@ -410,12 +412,12 @@ main {
     font-size: 28px;
     letter-spacing: .02em;
     line-height: 1.7em;
-    margin-bottom: 50px;
 }
 .mockup_render .mockup_wrapper img {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 
@@ -596,6 +598,8 @@ main {
 }
 .community .container img {
     width: 50px;
+    /* MIN-WIDTH FOR FIREFOX */
+    min-width: 50px;
     vertical-align: text-top;
     margin-bottom: auto;
     border-radius: 12px;
@@ -624,14 +628,13 @@ main {
 
 
 .footer {
-    padding: 30px 50px;
+    padding: 45px 50px;
 }
 .footer .footer_container {
     width: auto;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    padding: 30px 0px;
 }
 .footer .logo_wrapper {
     width: 33%;
@@ -639,12 +642,12 @@ main {
     display: flex;
 }
 .footer .logo_wrapper figure {
-    background-image: url("images/logo_light.png");
+    background-image: url("images/Logo_navi.png");
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
-    height: 20px;
+    height: 25px;
 
     margin-top: auto;
     margin-bottom: auto;
@@ -688,8 +691,8 @@ main {
 .github {
     margin-left: 7px;
     margin-right: 7px;
-    width: 30px;
-    height: 30px;
+    width: 26px;
+    height: 26px;
     background-size: cover;
     background-repeat: no-repeat;
     display: inline-block;
