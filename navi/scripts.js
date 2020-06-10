@@ -1,12 +1,11 @@
 
 function open_nav() {
-    /* MANUALLY CALCULATE DROPDOWN WIDTH, AUTO DOESN'T PLAY CLOSING TRANSITION */
+    /* MANUALLY CALCULATE DROPDOWN WIDTH (LINE 11 & 25) */
+    /* AUTO DOESN'T PLAY CLOSING TRANSITION */
     let sidenav = document.getElementById('sidenav');
     let dropdown = document.getElementById('sidenav_container_id');
     let bg = document.getElementById('sidenav_bg');
     let header_logo = document.getElementById('header_logo');
-    let bar1 = document.getElementById('bar1');
-    let bar3 = document.getElementById('bar3');
     let body = document.getElementsByTagName("body")[0];
     let main = document.getElementsByTagName("main")[0];
     const opened = dropdown.style.width == '230px' ? true : false;
@@ -22,8 +21,6 @@ function open_nav() {
         main.style.filter = 'blur(0px)';
         header_logo.style.opacity = '1';
         header_logo.style.filter = 'blur(0px)';
-        bar1.style.backgroundColor = 'rgb(135, 148, 165)';
-        bar3.style.backgroundColor = 'rgb(135, 148, 165)';
     } else {
         dropdown.style.width = '230px';
         sidenav.style.width = '100vw';
@@ -33,8 +30,6 @@ function open_nav() {
         main.style.filter = 'blur(6px)';
         header_logo.style.opacity = '0.4';
         header_logo.style.filter = 'blur(6px)';
-        bar1.style.backgroundColor = 'rgb(183, 202, 228)';
-        bar3.style.backgroundColor = 'rgb(183, 202, 228)';
     }
 }
 

@@ -4,62 +4,15 @@
  * WILL BE REMOVED IF THE BROWSER DOES NOT SUPPORT THIS CSS PROPERTY. THIS SECTION
  * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
  */
- @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-    .landing_container {
-        padding-top: 200px;
-        padding-bottom: 340px;
-    }
-    .landing .landing_title p {
-        max-width: 580px;
-    }
-    .landing .blur_region {
-        display: block;
-        position: absolute;
-        right: 0;
-        left: 0;
-        bottom: 0;
-
-        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.27), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-    }
-    .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_2.jpg");
-    }
-}
 
 @media screen and (max-width: 1300px) {
-    .nav_bar img {
-        height: 20px;
-    }
     .right_header a {
         font-size: 15px;
     }
 
-    .landing_container {
-        padding-top: 190px;
-        padding-bottom: 170px;
-    }
+
     .landing .blur_region .overview {
         padding: 75px 0;
-    }
-    .landing .landing_title a {
-        font-size: 10px;
-        padding: 5px 6px;
-    }
-    .landing #download {
-        font-size: 16px;
-    }
-    .landing .landing_title h1 {
-        font-size: 68px;
-        margin-bottom: 20px;
-    }
-    .landing .landing_title p {
-        font-size: 16px;
-        line-height: 1.6;
-
-        max-width: 43vw;
-        margin-bottom: 25px;
     }
     .landing .blur_region .overview .highlight_container {
         margin-right: 110px;
@@ -70,12 +23,6 @@
     }
     .landing .blur_region .overview .highlight_container p {
         font-size: 15px;
-    }
-    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-        .landing_container {
-            padding-top: 160px;
-            padding-bottom: 250px;
-        }
     }
 
 
@@ -187,39 +134,30 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .app_preview .app_preview_wrapper #rectangle {
-        display: block;
+    .nav_bar {
+        padding: 30px 50px;
     }
-    .app_preview .app_preview_wrapper #rounded {
-        display: none;
+    .nav_bar img {
+        height: 28px;
+    }
+    .landing {
+        padding-top: 500px;
+    }
+    .landing .bg_wrapper figure {
+        max-height: 720px;
     }
 }
+
 
 /* START TABLET LAYOUT */
 @media screen and (max-width: 1050px) {
     .nav_bar {
-        padding: 50px 30px;
-    }
-    .nav_bar img {
-        height: 18px;
+        padding: 30px 30px;
     }
 
 
-    .landing {
-        padding: 0 30px;
-    }
-    .landing #download {
-        font-size: 14px;
-    }
-    .landing .landing_title h1 {
-        font-size: 58px;
-        margin-bottom: 15px;
-    }
-    .landing .landing_title p {
-        font-size: 14px;
-
-        max-width: 43vw;
-        margin-bottom: 20px;
+    .landing .landing_title .landing_text_container {
+        padding: 35px 30px;
     }
     .landing .blur_region {
         padding: 0 30px;
@@ -233,12 +171,6 @@
     }
     .landing .blur_region .overview .highlight_container p {
         font-size: 14px;
-    }
-    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-        .landing_container {
-            padding-top: 140px;
-            padding-bottom: 210px;
-        }
     }
 
 
@@ -326,90 +258,25 @@
     }
 }
 
-@media screen and (max-width: 860px) {
-    .nav_bar {
-        padding: 50px 7vw;
-    }
-    .right_header div {
-        margin-left: 40px;
-    }
-
-
-    .landing {
-        padding: 0 7vw;
-        height: 850px;
-    }
-    .landing .landing_title .available {
-        display: none;
-    }
-    .landing .landing_title .available_mobile {
-        display: inline-block;
-    }
-    .landing a,
-    .landing .landing_title a {
-        font-weight: 700;
-    }
-    .landing .landing_title .available_mobile a {
-        font-size: 15px;
-    }
+@media screen and (max-width: 999px) {
     .landing #download {
-        font-size: 15px;
-        padding: 0px;
+        padding: 88px 50px;
     }
-    .landing_container {
-        padding-top: 0px;
-        padding-bottom: 0px;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-    .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_mobile_gradient.jpg");
-    }
-    .landing .landing_title {
-        max-width: none;
-        padding: 50px 7vw;
-        background-color: rgba(255, 255, 255, 0.6);
-    }
-    .landing .landing_title a {
-        font-size: 10px;
-        padding: 5px 8px;
-        background-color: rgb(238, 241, 245);
-        margin-right: 20px;
-    }
+}
+
+@media screen and (max-width: 900px) {
     .landing .landing_title h1 {
-        font-size: 48px;
+        font-size: 24px;
     }
     .landing .landing_title p {
-        font-size: 15px;
-        max-width: 500px;
-        margin-bottom: 30px;
-        color: rgb(192, 199, 209);
+        font-size: 16px;
     }
-    .landing .blur_region {
-        display: none;
+    .landing #download {
+        font-size: 20px;
     }
-    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-        .landing .landing_title {
-            -webkit-backdrop-filter: blur(9px);
-            backdrop-filter: blur(9px);
-            background-color: rgba(255, 255, 255, 0.5);
-            background-image: linear-gradient(
-                to top,
-                rgba(255, 255, 255, 0.3),
-                rgba(255, 255, 255, 0.205),
-                rgba(255, 255, 255, 0),
-                rgba(255, 255, 255, 0),
-                rgba(0, 0, 0, 0)
-            );
-        }
-       .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_mobile.jpg");
-       }
-   }
+}
 
-
+@media screen and (max-width: 860px) {
     .app_preview {
         padding: 120px 0vw;
     }
@@ -529,21 +396,6 @@
     }
 
 
-    .landing {
-        padding: 0 30px;
-        height: 750px;
-    }
-    .landing .landing_title {
-        padding: 40px 40px;
-    }
-    .landing .landing_title a {
-        font-size: 9px;
-    }
-    .landing .landing_title h1 {
-        font-size: 42px;
-    }
-
-
     .app_preview {
         padding: 100px 0px;
     }
@@ -645,6 +497,13 @@
     }
 }
 
+
+@media screen and (max-width: 714px) {
+    .landing #download {
+        padding: 97px 50px;
+    }
+}
+
 @media screen and (max-width: 650px) {
     .nav_bar {
         padding-top: 20px;
@@ -653,51 +512,41 @@
     }
 
 
-    .landing {
-        height: 680px;
-    }
-
     .footer {
         width: auto;
         padding: 20px 15px;
     }
 }
 
-@media screen and (max-width: 600px) {
+/* MOBILE GLASS */
+@media screen and (max-width: 616px) {
     .landing {
-        padding: 0 15px;
-        height: 650px;
+        padding-top: 400px;
     }
     .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_phone.jpg");
-        background-position: center top;
+        max-height: 810px;
     }
-    @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
-        .landing .landing_title {
-            -webkit-backdrop-filter: blur(8px);
-            backdrop-filter: blur(8px);
-            background-color: rgba(255, 255, 255, 0.5);
-            background-image: none;
-        }
-       .landing .bg_wrapper figure {
-        background-image: url("images/ultraboost_white_phone_nogradient.jpg");
-       }
-   }
-    .landing .landing_title {
-        padding: 40px 15px;
-    }
-    .landing .landing_title .available_mobile a {
-        font-size: 13px;
-    }
-    .landing .landing_title a {
-        font-size: 9px;
+    .landing_title {
+        flex-direction: column;
     }
     .landing .landing_title h1 {
-        font-size: 36px;
+        font-size: 24px;
+        margin-bottom: 15px;
     }
     .landing .landing_title p {
-        font-size: 14px;
+        font-size: 16px;
     }
+    .landing .download_button {
+        margin: 0;
+        width: 100%;
+    }
+    .landing #download {
+        padding: 50px 30px;
+        padding-right: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
 
 
     .app_preview {
@@ -838,6 +687,16 @@
     }
     .community .container .text_container {
         padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .landing .landing_title .landing_text_container {
+        padding: 35px 15px;
+    }
+    .landing #download {
+        padding: 45px 15px;
+        padding-right: 100%;
     }
 }
 

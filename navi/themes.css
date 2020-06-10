@@ -6,12 +6,11 @@ body {
     background-color: rgb(42, 42, 42);
 }
 .sidenav_links a {
-    color: rgb(183, 202, 228);
+    color: rgb(215, 230, 249);
 }
 .sidenav_links a:hover,
 .sidenav_container a:focus {
-    color: rgb(204, 225, 255);
-    transition-duration: 0.5s;
+    color: rgb(172, 206, 255);
 }
 .bar1,
 .bar2,
@@ -20,25 +19,30 @@ body {
 }
 
 
-.right_header a {
-    color: rgb(192, 198, 207);
+.nav_bar img {
+    background-color: rgba(98, 98, 98, 0.5);
 }
-.right_header #active {
-    color: rgb(135, 148, 165);
+.nav_bar .right_header a {
+    color: rgba(255, 255, 255, 0.5);
 }
-.nav_bar .current {
-    color: #f0d5b6;
+.nav_bar .right_header #active {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.23);
+    padding-bottom: 3px;
 }
-.right_header a:hover {
-    color: rgb(135, 148, 165);
+.nav_bar .right_header a:hover {
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
+.landing_container {
+    background-color: rgba(0, 0, 0, 0.37);
+}
 .landing .landing_title h1 {
-    color: rgb(135, 148, 165);
+    color: rgb(255, 255, 255);
 }
 .landing .landing_title p {
-    color: rgb(186, 194, 203); 
+    color: rgb(217, 217, 217);
 }
 .landing .landing_container h2 {
     color: rgb(192, 198, 207);
@@ -52,18 +56,20 @@ body {
 .landing .blur_region .overview .highlight_container p {
     color: rgb(192, 198, 207);
 }
-.landing a,
-.landing .landing_title a {
-    color: rgb(135, 148, 165);
-    background-color: rgb(222, 223, 226);
-}
 .landing #download {
-    background-color: rgba(222, 223, 226, 0);
+    background-color: rgb(99, 147, 217);
+}
+.landing #download:hover {
+    background-color: rgb(99, 159, 247);
+}
+.landing .landing_title a {
+    color: rgb(255, 255, 255);
 }
 
 
 .app_preview {
-    background-image: linear-gradient(to bottom, rgb(215, 223, 235), rgb(241, 241, 241));
+    /* background-image: linear-gradient(to bottom, rgb(215, 223, 235), rgb(241, 241, 241)); */
+    background-color: rgb(255, 255, 255);
 }
 .app_preview .app_preview_wrapper h1 {
     color: rgb(184, 189, 197);
@@ -77,7 +83,14 @@ body {
     background-image: url("images/lifestyle.jpg");
 }
 #lifestyle .lifestyle_gradient_wrapper {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9)
+    );
 }
 #lifestyle .text_container h1 {
     color: rgb(236, 236, 236);
@@ -106,13 +119,27 @@ body {
     color: rgb(190, 190, 190);
 }
 
+
 .mockup_render {
     background-color: rgb(39, 39, 39);
+}
+.mockup_render .mockup_wrapper h1 {
+    color: rgb(136, 136, 136);
+}
+.mockup_render .mockup_wrapper p {
+    color: rgb(236, 236, 236); 
+}
+.mockup_render .mockup_wrapper img {
+    box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.6);
 }
 
 
 .themes {
-    background-image: linear-gradient(to bottom, rgb(25, 25, 25), rgb(42, 42, 42));
+    background-image: linear-gradient(
+        to bottom,
+        rgb(25, 25, 25),
+        rgb(42, 42, 42)
+    );
 }
 .themes .themes_bg_wrapper {
     background-color: rgb(42, 42, 42);
@@ -153,7 +180,14 @@ body {
     background-image: url("images/ultraboost.jpg");
 }
 #automate .automate_gradient_wrapper {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0)
+    );
 }
 #automate .text_container h1 {
     color: rgb(218, 218, 218);
