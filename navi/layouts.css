@@ -543,6 +543,7 @@
     .landing .download_button {
         margin: 0;
         width: 100%;
+        overflow: hidden;
     }
     .landing #download {
         padding: 50px 30px;
