@@ -19,6 +19,15 @@
     to   { width: 25px; }
 }
 
+@keyframes blank_shadow {
+    from { box-shadow: 0px 30px 80px rgba(0, 0, 0, 0); }
+    to   { box-shadow: 0px 30px 80px rgba(0, 0, 0, 0); }
+}
+@keyframes shadow_in {
+    from { box-shadow: 0px 30px 80px rgba(0, 0, 0, 0); }
+    to   { box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.35); }
+}
+
 @keyframes text_in {
     from {
         opacity: 0;
@@ -144,24 +153,33 @@
 }
 
 .app_preview .app_preview_wrapper h1 {
-    animation-delay: 0s, 1.3s;
-    animation-duration: 1.3s, 1s;
+    animation-delay: 0s, 1.7s;
+    animation-duration: 1.7s, 1s;
 }
 .app_preview .app_preview_wrapper p {
-    animation-delay: 0s, 1.4s;
-    animation-duration: 1.4s, 1s;
+    animation-delay: 0s, 1.8s;
+    animation-duration: 1.8s, 1s;
 }
 
+.app_preview .app_preview_wrapper .image_container {
+    -webkit-animation: blank_shadow, shadow_in;
+    -moz-animation:    blank_shadow, shadow_in;
+    -ms-animation:     blank_shadow, shadow_in;
+    -o-animation:      blank_shadow, shadow_in;
+    animation:         blank_shadow, shadow_in;
 
+    animation-delay: 0s, 1.3s;
+    animation-duration: 1.3s, 1.5s;
+}
 .app_preview .app_preview_wrapper img {
     animation-timing-function: ease-in-out;
-    
+
     -webkit-animation: blank_opacity, fade_in, zoom_out;
     -moz-animation:    blank_opacity, fade_in, zoom_out;
     -ms-animation:     blank_opacity, fade_in, zoom_out;
     -o-animation:      blank_opacity, fade_in, zoom_out;
     animation:         blank_opacity, fade_in, zoom_out;
 
-    animation-delay: 0s, 1.6s, 1.6s;
-    animation-duration: 1.6s, 0.8s, 1.5s;
+    animation-delay: 0s, 1.3s, 1.3s;
+    animation-duration: 1.3s, 0.8s, 1.5s;
 }
