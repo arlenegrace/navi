@@ -68,14 +68,13 @@ body {
 
 
 .app_preview {
-    /* background-image: linear-gradient(to bottom, rgb(215, 223, 235), rgb(241, 241, 241)); */
     background-color: rgb(255, 255, 255);
 }
 .app_preview .app_preview_wrapper h1 {
-    color: rgb(184, 189, 197);
+    color: rgb(184, 184, 184);
 }
 .app_preview .app_preview_wrapper p {
-    color: rgb(135, 148, 165);
+    color: rgb(90, 90, 90);
 }
 
 
