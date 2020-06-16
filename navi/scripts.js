@@ -1,7 +1,8 @@
-
 function open_nav() {
-    /* MANUALLY CALCULATE DROPDOWN WIDTH (LINE 11 & 25) */
-    /* AUTO DOESN'T PLAY CLOSING TRANSITION */
+    /* 
+     * MANUALLY CALCULATE DROPDOWN WIDTH (LINE 11 & 25)
+     * BECAUSE `AUTO` BREAKS CLOSING TRANSITION
+     */
     let sidenav = document.getElementById('sidenav');
     let dropdown = document.getElementById('sidenav_container_id');
     let bg = document.getElementById('sidenav_bg');
