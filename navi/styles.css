@@ -133,7 +133,7 @@ main {
 
 .landing {
     position: relative;
-    padding-top: 600px;
+    padding-top: 550px;
 }
 .landing .bg_wrapper {
     height: 100vh;
@@ -146,7 +146,7 @@ main {
 }
 .landing .bg_wrapper figure {
     height: 100%;
-    max-height: 768px;
+    max-height: 760px;
     width: 100%;
     background-image: url("images/landing_test5.jpg");
     background-position: top;
@@ -186,6 +186,7 @@ main {
     margin-right: 0px;
     margin-left: auto;
     display: flex;
+    flex-direction: column;
 }
 .landing .landing_title a {
     font-weight: 700;
@@ -193,10 +194,12 @@ main {
     letter-spacing: 0.05em;
     text-decoration: none;
 }
-.landing #download {
+.landing #download,
+.landing #learn {
     font-size: 22px;
     white-space: nowrap; 
-    padding: 73px 50px;
+    padding: 50px 60px;
+    padding: 40px 50px;
     transition-duration: 0.5s;
 }
 .landing .landing_title h1 {
@@ -211,42 +214,6 @@ main {
     font-size: 18px;
     line-height: 1.7;
     letter-spacing: 0.015em;
-}
-.landing .blur_region {
-    display: none;
-    padding: 0 50px;
-}
-.landing .blur_region .overview {
-    width: auto;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 110px 0;
-
-    font-family: 'Inter', sans-serif;
-    letter-spacing: 0.05em;
-}
-.landing .blur_region .overview h1 {
-    font-weight: 700;
-    font-size: 28px;
-    margin-bottom: 60px;
-}
-.landing .blur_region .overview .highlight_flexbox_container {
-    display: flex;
-}
-.landing .blur_region .overview .highlight_container {
-    margin-right: 170px;
-}
-.landing .blur_region .overview #auto {
-    margin-right: 0px;
-}
-.landing .blur_region .overview .highlight_container h3 {
-    font-weight: 700;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.landing .blur_region .overview .highlight_container p {
-    font-weight: 600;
-    font-size: 18px;
 }
 
 

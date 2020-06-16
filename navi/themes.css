@@ -56,6 +56,13 @@ body {
 .landing .blur_region .overview .highlight_container p {
     color: rgb(192, 198, 207);
 }
+.landing #learn {
+    background-color: rgb(232, 196, 184);
+}
+.landing #learn:hover {
+    background-color: rgb(255, 222, 211);
+    background-color: rgb(241, 203, 190);
+}
 .landing #download {
     background-color: rgb(99, 147, 217);
 }

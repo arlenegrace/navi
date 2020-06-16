@@ -11,21 +11,6 @@
     }
 
 
-    .landing .blur_region .overview {
-        padding: 75px 0;
-    }
-    .landing .blur_region .overview .highlight_container {
-        margin-right: 110px;
-    }
-    .landing .blur_region .overview .highlight_container h3 {
-        font-size: 15px;
-        margin-bottom: 14px;
-    }
-    .landing .blur_region .overview .highlight_container p {
-        font-size: 15px;
-    }
-
-
     .app_preview .app_preview_wrapper h1,
     .app_preview .app_preview_wrapper p {
         margin: 0 7vw;
@@ -79,7 +64,6 @@
     .mockup_render .mockup_wrapper h1,
     .mockup_render .mockup_wrapper p {
         margin: 0 7vw;
-        margin-bottom: 50px;
     }
     .mockup_render .mockup_wrapper h1 {
         font-size: 16px;
@@ -148,6 +132,10 @@
     .landing .bg_wrapper figure {
         max-height: 720px;
     }
+    .landing #download,
+    .landing #learn {
+        padding: 40px 50px;
+    }
 }
 
 
@@ -159,20 +147,7 @@
 
 
     .landing .landing_title .landing_text_container {
-        padding: 35px 30px;
-    }
-    .landing .blur_region {
-        padding: 0 30px;
-    }
-    .landing .blur_region .overview {
-        padding: 60px 0;
-    }
-    .landing .blur_region .overview .highlight_container h3 {
-        font-size: 14px;
-        margin-bottom: 14px;
-    }
-    .landing .blur_region .overview .highlight_container p {
-        font-size: 14px;
+        padding: 25px 30px;
     }
 
 
@@ -207,6 +182,9 @@
 
     .customize {
         padding: 120px 30px;
+    }
+    .customize .customize_header_container {
+        padding-bottom: 60px;
     }
     .customize .customize_header_container h1 {
         font-size: 24px;
@@ -254,48 +232,24 @@
     }
 }
 
-@media screen and (max-width: 999px) {
-    .landing #download {
-        padding: 88px 50px;
-    }
-}
-
 @media screen and (max-width: 900px) {
-    .landing .landing_title h1 {
-        font-size: 24px;
-    }
-    .landing .landing_title p {
-        font-size: 16px;
-    }
+    .landing #learn,
     .landing #download {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 860px) {
-    .app_preview {
-        padding: 120px 0vw;
-    }
     .app_preview .app_preview_wrapper h1 {
         font-size: 14px;
         margin-bottom: 10px;
     }
     .app_preview .app_preview_wrapper p {
         font-size: 22px;
-        letter-spacing: .01em;
-        line-height: 1.6em;
+        line-height: 1.4em;
     }
 
 
-    .lifestyle .lifestyle_gradient_wrapper,
-    .automate .automate_gradient_wrapper {
-        padding: 0px 7vw;
-    }
-
-
-    .customize {
-        padding: 120px 7vw;
-    }
     .customize .customize_cards_container {
         flex-direction: column;
     }
@@ -324,6 +278,9 @@
     .customize .square_info_container h1 {
         margin: 0 auto;
     }
+    .customize .customize_header_container {
+        padding-bottom: 50px;
+    }
     .customize .customize_header_container h2 {
         padding-bottom: 20px;
     }
@@ -340,9 +297,6 @@
     }
 
 
-    .community {
-        padding: 0 7vw;
-    }
     .community .container .discordc {
         padding-right: 20px;
     }
@@ -385,12 +339,30 @@
     .right_header a {
         font-size: 14px;
     }
+
+
+    .landing .landing_title h1 {
+        font-size: 24px;
+    }
+    .landing .landing_title p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
 }
 
 @media screen and (max-width: 750px) {
     .nav_bar {
         padding: 50px 40px;
         padding-top: 20px;
+    }
+
+    .landing .landing_title p {
+        font-size: 16px;
+    }
+    .landing #download,
+    .landing #learn {
+        font-size: 18px;
+        padding: 40px 40px;
     }
 
 
@@ -501,13 +473,6 @@
     }
 }
 
-
-@media screen and (max-width: 714px) {
-    .landing #download {
-        padding: 97px 50px;
-    }
-}
-
 @media screen and (max-width: 650px) {
     .nav_bar {
         padding-top: 20px;
@@ -537,13 +502,13 @@
         font-size: 24px;
         margin-bottom: 15px;
     }
-    .landing .landing_title p {
-        font-size: 16px;
-    }
     .landing .download_button {
         margin: 0;
         width: 100%;
         overflow: hidden;
+    }
+    .landing #learn {
+        display: none;
     }
     .landing #download {
         padding: 50px 30px;
@@ -581,10 +546,10 @@
     }
     .customize .customize_header_container {
         padding: 0 6vw;
-        padding-bottom: 60px;
+        padding-bottom: 50px;
     }
     .customize .customize_header_container h1 {
-        font-size: 18px;
+        font-size: 20px;
     }
     .customize .customize_header_container h2 {
         font-size: 34px;
