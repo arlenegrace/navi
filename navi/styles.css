@@ -263,6 +263,11 @@ main {
 .app_preview .app_preview_wrapper #rectangle {
     display: none;
 }
+.app_preview .app_preview_wrapper .image_container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
 .app_preview .app_preview_wrapper img {
     width: 100%;
     margin-left: auto;
