@@ -5,7 +5,7 @@
  * MAKES IT VISIBLE AND ADJUSTS THE ENTIRE LANDING SECTION TO ACCOMODATE THIS.
  */
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .right_header a {
         font-size: 15px;
     }
@@ -119,7 +119,7 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .nav_bar {
         padding: 30px 50px;
     }
@@ -140,7 +140,7 @@
 
 
 /* START TABLET LAYOUT */
-@media screen and (max-width: 1050px) {
+@media only screen and (max-width: 1050px) {
     .nav_bar {
         padding: 30px 30px;
     }
@@ -232,14 +232,14 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .landing #learn,
     .landing #download {
         font-size: 20px;
     }
 }
 
-@media screen and (max-width: 860px) {
+@media only screen and (max-width: 860px) {
     .app_preview .app_preview_wrapper h1 {
         font-size: 14px;
         margin-bottom: 10px;
@@ -318,7 +318,7 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nav_bar {
         padding-top: 20px;
     }
@@ -350,7 +350,7 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) {
     .nav_bar {
         padding: 50px 40px;
         padding-top: 20px;
@@ -473,7 +473,7 @@
     }
 }
 
-@media screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
     .nav_bar {
         padding-top: 20px;
         padding-left: 15px;
@@ -488,7 +488,7 @@
 }
 
 /* MOBILE GLASS */
-@media screen and (max-width: 616px) {
+@media only screen and (max-width: 616px) {
     .landing {
         padding-top: 400px;
     }
@@ -516,7 +516,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
 
     .app_preview {
@@ -660,7 +660,7 @@
     }
 }
 
-@media screen and (max-width: 460px) {
+@media only screen and (max-width: 460px) {
     .landing .landing_title .landing_text_container {
         padding: 35px 15px;
     }
@@ -671,7 +671,7 @@
 }
 
 /* SHRINK FOOTER FOR SMALLER PHONES */
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .social {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -695,7 +695,7 @@
 
 
 /* SHRINK DROPDOWN MENU TEXT FOR SHORT SCREENS (SUB 450PX HEIGHT) */
-@media screen and (max-height: 450px) {
+@media only screen and (max-height: 450px) {
     .sidenav {
         overflow-y: auto;
     }
