@@ -476,8 +476,6 @@ main {
 
     position: center;
     background-size: contain;
-
-    transform: scale(1.0);
 }
 .themes .themes_wrapper .themes_banner_container h1 {
     font-family: 'Inter', sans-serif;
