@@ -18,7 +18,7 @@ This repo contains all necessary files except for images which you provide. It i
 
 
 ## Preview
-For a live preview, visit https://infinitylabs.dev/navi_rc3/.
+For a live preview, visit https://infinitylabs.dev/navi/.
 
 
 ## License
